@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import Home from '../../../public/Home/Home'
+import Home from '../Home/Home'
+ 
 
 const Layaut = () => {
   return (
     <div>
       <Navbar/>
-      <Home/>
+     <Home/>
     </div>
   )
 }

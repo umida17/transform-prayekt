@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Campanents/Navbar/Navbar'; // Papka nomingni to'g'ri yozganingga e'tibor ber
+import Navbar from './Campanents/Navbar/Navbar'; 
+import Home from './Campanents/Home/Home';
 
 function App() {
   return (
