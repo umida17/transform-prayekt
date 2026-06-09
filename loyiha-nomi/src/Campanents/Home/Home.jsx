@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import header from '../../assets/Header.png'
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ const Home = () => {
             <div className="accent-blue-right"></div>
             <div className="accent-orange-left"></div>
             <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" 
+              src={header} 
               alt="Finsweet Team" 
               className="hero-main-img"
             />

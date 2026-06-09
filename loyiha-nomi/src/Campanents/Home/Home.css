@@ -10,9 +10,9 @@
 /* 🎯 ASOSIY CONTAINER KLASSI */
 .container {
   width: 100%;
-  max-width: 1200px; /* Ekranda kontent maksimal shu kenglikda turadi */
-  margin: 0 auto;    /* Kontentni ekranning o'rtasiga joylashtiradi */
-  padding: 0 20px;   /* Kichik ekranlarda chetiga yopishib qolmasligi uchun */
+  max-width: 1200px;  
+  margin: 0 auto;   
+  padding: 0 20px;    
   box-sizing: border-box;
 }
 
@@ -20,6 +20,7 @@
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  margin-top: 70px;
 }
 
 /* --- HERO SECTION --- */
@@ -75,7 +76,7 @@
 
 .hero-main-img {
   width: 100%;
-  height: 500px;
+  height: 420px;
   object-fit: cover;
   display: block;
 }
@@ -135,7 +136,7 @@
 }
 
 .logo-item {
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 700;
 }
 
