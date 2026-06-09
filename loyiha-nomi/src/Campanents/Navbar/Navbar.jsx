@@ -11,11 +11,13 @@ const Navbar = () => {
 
                 <ul>
                     <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-
+                    <li>Service</li>
+                    <li>Company</li>
+                    <li>Career</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                    <li>Clone project</li>
+                     
                 </ul>
             </div>
         </div>
