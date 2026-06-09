@@ -4,8 +4,8 @@ import header from '../../assets/Header.png';
 import images from '../../assets/Image.png'
 import majlis from '../../assets/majlis.png'
 import hamkor from '../../assets/hamkor.png'
-
-
+import dugona from '../../assets/dugona.png'
+import ish from '../../assets/ish.png'
 
 // 🚀 Sonlar aylanib o'sishi uchun maxsus dinamik komponent
 const Counter = ({ endValue, duration = 2000 }) => {
@@ -400,7 +400,7 @@ const Home = () => {
             
             <div className="blog-card">
               <div className="blog-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=500&auto=format&fit=crop" alt="Blog 1" />
+                <img src={dugona} alt="Blog 1" />
               </div>
               <div className="blog-card-content">
                 <span className="blog-date">Jan 19, 2021</span>
@@ -410,8 +410,8 @@ const Home = () => {
             </div>
 
             <div className="blog-card">
-              <div className="blog-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=500&auto=format&fit=crop" alt="Blog 2" />
+              <div className="blog-img-wrapper">"h
+                <img src={ish} alt="Blog 2" />
               </div>
               <div className="blog-card-content">
                 <span className="blog-date">Jan 19, 2021</span>
