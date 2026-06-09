@@ -1,0 +1,295 @@
+/* Ranglar va umumiy sozlamalar */
+:root {
+  --dark-bg: #1d1e2c;
+  --white-bg: #ffffff;
+  --btn-blue: #444cf7;
+  --text-gray: #a3a4b7;
+  --text-dark: #1d1d2e;
+  --accent-orange: #ff9966;
+}
+
+.home-container {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- HERO SECTION STYLES --- */
+.hero-section {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  padding: 80px 8% 40px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: var(--text-gray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.btn-quote {
+  background-color: var(--btn-blue);
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s ease;
+}
+
+.btn-quote:hover {
+  background-color: #3339d1;
+}
+
+/* Hero Image & Accents */
+.hero-image-wrapper {
+  position: relative;
+  max-width: 40%;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rasmdagi rangli kichik to'rtburchaklar (Dekoratsiya) */
+.accent-orange-top {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-orange);
+  z-index: 1;
+}
+
+.accent-blue-right {
+  position: absolute;
+  right: -10px;
+  top: 30%;
+  width: 15px;
+  height: 40px;
+  background-color: var(--btn-blue);
+}
+
+.accent-orange-left {
+  position: absolute;
+  bottom: 40px;
+  left: -15px;
+  width: 15px;
+  height: 40px;
+  background-color: var(--accent-orange);
+}
+
+/* Client Logos */
+.clients-logos {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.clients-text span {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+}
+
+.clients-text h4 {
+  margin: 4px 0 0 0;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.logos-grid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.logo-item {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+
+/* --- ABOUT SECTION STYLES --- */
+.about-section {
+  background-color: var(--white-bg);
+  color: var(--text-dark);
+  padding: 100px 8%;
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.about-left {
+  flex: 1.2;
+}
+
+.about-right {
+  flex: 1;
+  padding-top: 30px;
+}
+
+.section-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-sub-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-desc {
+  color: #535364;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Gallery */
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.decorative-card {
+  position: relative;
+}
+
+.accent-orange-vertical {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 15px;
+  height: 120px;
+  background-color: var(--accent-orange);
+}
+
+.accent-blue-vertical {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 15px;
+  height: 80px;
+  background-color: var(--btn-blue);
+}
+
+/* Stats Footer */
+.about-stats-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 60px;
+}
+
+.stat-item h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.stat-line {
+  height: 4px;
+  width: 35px;
+  margin-bottom: 12px;
+}
+
+.stat-line.orange { background-color: var(--accent-orange); }
+.stat-line.blue { background-color: var(--btn-blue); }
+.stat-line.yellow { background-color: #ffcc00; }
+.stat-line.purple { background-color: #8a2be2; }
+
+.stat-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #535364;
+  font-weight: 500;
+}
+
+.read-more-link {
+  color: var(--btn-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.2s;
+}
+
+.read-more-link:hover {
+  gap: 14px;
+}
+
+/* --- RESPONSIVE (Mobil qurilmalar uchun moslashuvchanlik) --- */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .hero-content { max-width: 100%; }
+  .hero-image-wrapper { max-width: 80%; }
+  .clients-logos { flex-direction: column; gap: 20px; }
+  .about-header { flex-direction: column; gap: 30px; }
+  .about-gallery { grid-template-columns: 1fr; }
+  .about-stats-footer { flex-direction: column; gap: 40px; text-align: center; }
+  .stats-grid { flex-wrap: wrap; justify-content: center; }
+}
