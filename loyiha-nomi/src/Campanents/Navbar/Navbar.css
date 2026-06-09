@@ -1,13 +1,13 @@
 /* --- Umumiy Sozlamalar --- */
 .header {
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06); /* Pastidan mayin soya */
+  background-color: #232536;
+  box-shadow: 0 4px 25px rgba(161, 160, 160, 0.06); /* Pastidan mayin soya */
   position: fixed; /* Ekranning tepasiga yopishib turadi */
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 /* Saytni ikki chetini tekislash uchun konteyner */
@@ -42,7 +42,7 @@
 /* Hamma oddiy linklar uchun umumiy stil */
 .nav-link {
   text-decoration: none;
-  color: #556080; /* Chiroyli zamonaviy kulrang */
+  color: #eff0f5; /* Chiroyli zamonaviy kulrang */
   font-family: 'Inter', 'Segoe UI', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -55,7 +55,7 @@
 
 /* 🔥 SEN AYTGAN 3 TA MAXSUS LINK STILI (Home, Service, Company) */
 .special-link {
-  color: #111827; /* Ularga qaraganda to'qroq, ajralib turadigan rang */
+  color: #e2e4e7; /* Ularga qaraganda to'qroq, ajralib turadigan rang */
   font-weight: 600; /* Sal qalinroq */
   position: relative;
   padding: 6px 0;
@@ -96,4 +96,9 @@
   background-color: #4338ca;
   box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
   transform: translateY(-1px);
+}
+
+
+body{
+    background: #232536;
 }
