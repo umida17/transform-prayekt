@@ -9,7 +9,11 @@ const Navbar = () => {
                 <img src={} alt="" />
 
                 <ul>
-                    
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
                 </ul>
             </div>
         </div>
