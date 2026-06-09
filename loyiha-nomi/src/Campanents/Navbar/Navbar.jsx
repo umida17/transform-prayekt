@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom' // Sahifadan sahifaga o'tish uchun
-import logo from '../../assets/Logo (1).svg'
+import logo from '../../assets/Logo .svg'
 import './Navbar.css' // CSS faylimiz
 
 const Navbar = () => {
