@@ -1,3 +1,346 @@
+:root {
+  --dark-bg: #1d1e2c;
+  --white-bg: #ffffff;
+  --btn-blue: #444cf7;
+  --text-gray: #a3a4b7;
+  --text-dark: #1d1d2e;
+  --accent-orange: #ff9966;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;  
+  margin: 0 auto;   
+  padding: 0 20px;    
+  box-sizing: border-box;
+}
+
+.home-page {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: var(--text-gray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* 🎯 Tugma va uning hover effekti */
+.btn-quote {
+  background-color: var(--btn-blue);
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease; /* Yumshoq o'tish */
+}
+
+.btn-quote:hover {
+  background-color: #2e35cc;
+  transform: translateY(-3px); /* 3px yuqoriga ko'tariladi */
+  box-shadow: 0 10px 20px rgba(68, 76, 247, 0.3); /* Soyasi chiqadi */
+}
+
+.btn-quote .arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-quote:hover .arrow {
+  transform: translateX(5px); /* O'qcha o'ngga suriladi */
+}
+
+/* 🎯 Rasm va dekoratsiyalar hover effekti */
+.hero-image-wrapper {
+  position: relative;
+  max-width: 40%;
+  overflow: visible;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  border-radius: 4px;
+}
+
+.hero-image-wrapper:hover .hero-main-img {
+  transform: scale(1.03); /* Rasm ustiga borganda sal kattalashadi */
+}
+
+/* Dekorativ chiziqchalar harakati */
+.accent-orange-top, .accent-blue-right, .accent-orange-left {
+  transition: transform 0.4s ease;
+}
+.hero-image-wrapper:hover .accent-orange-top { transform: translate(-5px, -5px); }
+.hero-image-wrapper:hover .accent-blue-right { transform: translateX(5px); }
+.hero-image-wrapper:hover .accent-orange-left { transform: translateX(-5px); }
+
+.accent-orange-top {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-orange);
+  z-index: 1;
+}
+
+.accent-blue-right {
+  position: absolute;
+  right: -10px;
+  top: 30%;
+  width: 15px;
+  height: 40px;
+  background-color: var(--btn-blue);
+}
+
+.accent-orange-left {
+  position: absolute;
+  bottom: 40px;
+  left: -15px;
+  width: 15px;
+  height: 40px;
+  background-color: var(--accent-orange);
+}
+
+/* Client Logos */
+.clients-logos {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.clients-text span {
+  font-size: 8px;
+  color: var(--text-gray);
+}
+
+.clients-text h4 {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  width: 120px;
+}
+
+.logos-grid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Logolar hover effekti */
+.logo-item {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+/* --- ABOUT SECTION --- */
+.about-section {
+  background-color: var(--white-bg);
+  color: var(--text-dark);
+  padding: 100px 0;
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.about-left { flex: 1.2; }
+.about-right { flex: 1; padding-top: 30px; }
+
+.section-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-sub-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-desc {
+  color: #535364;
+  line-height: 1.6;
+}
+
+/* 🎯 Galereya rasmlariga hover berish */
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05) rotate(1deg); /* Bir oz burilib kattalashadi */
+}
+
+.decorative-card {
+  overflow: visible; /* Yon chiziqlar ko'rinib turishi uchun */
+  position: relative;
+}
+
+.accent-orange-vertical {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 15px;
+  height: 120px;
+  background-color: var(--accent-orange);
+}
+
+.accent-blue-vertical {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 15px;
+  height: 80px;
+  background-color: var(--btn-blue);
+}
+
+/* 🎯 Statistika bo'limi dinamikasi */
+.about-stats-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 60px;
+}
+
+.stat-item {
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px); /* Har bir statistika ustiga borganda ozgina ko'tariladi */
+}
+
+.stat-item h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: var(--text-dark);
+}
+
+.stat-line {
+  height: 4px;
+  width: 35px;
+  margin-bottom: 12px;
+  transition: width 0.3s ease;
+}
+
+.stat-item:hover .stat-line {
+  width: 50px; /* Hover bo'lganda tagidagi chiziq kengayadi */
+}
+
+.stat-line.orange { background-color: var(--accent-orange); }
+.stat-line.blue { background-color: var(--btn-blue); }
+.stat-line.yellow { background-color: #ffcc00; }
+.stat-line.purple { background-color: #8a2be2; }
+
+/* 🎯 Link hover effekti */
+.read-more-link {
+  color: var(--btn-blue);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+  gap: 15px; /* O'qcha uzoqlashadi */
+  color: #2e35cc;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .hero-container { flex-direction: column; text-align: center; gap: 50px; }
+  .hero-content { max-width: 100%; }
+  .hero-image-wrapper { max-width: 80%; }
+  .clients-logos { flex-direction: column; gap: 20px; }
+  .about-header { flex-direction: column; gap: 30px; }
+  .about-gallery { grid-template-columns: 1fr; }
+  .about-stats-footer { flex-direction: column; gap: 40px; }
+  .stats-grid { flex-wrap: wrap; justify-content: center; }
+}
+
+
 /* --- 🎯 EXPERTISE SECTION --- */
 .expertise-section {
   background-color: #f9fafb; /* Rasmda orqa fon mayin och kulrang/havorang tusda */
@@ -210,3 +553,4 @@
     grid-template-columns: 1fr;
   }
 }
+
