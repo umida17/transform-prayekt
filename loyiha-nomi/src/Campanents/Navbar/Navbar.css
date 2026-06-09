@@ -2,22 +2,20 @@
 .header {
   width: 100%;
   background-color: #232536;
-  box-shadow: 0 4px 25px rgba(161, 160, 160, 0.06); /* Pastidan mayin soya */
-  position: fixed; /* Ekranning tepasiga yopishib turadi */
+  box-shadow: 0 4px 25px rgba(161, 160, 160, 0.06); 
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: 1000;
   padding: 18px 0;
 }
 
-/* Saytni ikki chetini tekislash uchun konteyner */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Navbarni ichidagilarni yonma-yon qilish */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -25,7 +23,7 @@
 }
 
 .logo-area img {
-  height: 40px; /* Logoni chiroyli o'lchamga keltirish */
+  height: 40px; 
   display: block;
 }
 
@@ -34,34 +32,34 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 28px; /* Linklar orasidagi masofa */
+  gap: 28px; 
   margin: 0;
   padding: 0;
+  transition: all 0.4s ease; /* Silliq ochilishi uchun */
 }
 
-/* Hamma oddiy linklar uchun umumiy stil */
 .nav-link {
   text-decoration: none;
-  color: #eff0f5; /* Chiroyli zamonaviy kulrang */
+  color: #eff0f5; 
   font-family: 'Inter', 'Segoe UI', sans-serif;
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .nav-link:hover {
-  color: #4f46e5; /* Sichqoncha kelganda Indigo rang bo'ladi */
+  color: #4f46e5; 
 }
 
-/* 🔥 SEN AYTGAN 3 TA MAXSUS LINK STILI (Home, Service, Company) */
+/* Maxsus linklar */
 .special-link {
-  color: #e2e4e7; /* Ularga qaraganda to'qroq, ajralib turadigan rang */
-  font-weight: 600; /* Sal qalinroq */
+  color: #e2e4e7; 
+  font-weight: 600; 
   position: relative;
   padding: 6px 0;
 }
 
-/* Sichqoncha kelganda ostidan chiroziq chiziq chiqish effekti */
 .special-link::after {
   content: '';
   position: absolute;
@@ -69,27 +67,27 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4f46e5; /* Chiziq rangi */
+  background-color: #4f46e5; 
   transition: width 0.3s ease;
 }
 
 .special-link:hover::after {
-  width: 100%; /* Sichqoncha turganda chiziq to'liq yoziladi */
+  width: 100%; 
 }
 
 .special-link:hover {
   color: #4f46e5;
-  transform: translateY(-2px); /* Salginagina tepaga ko'tariladi (Ajoyib dinamika beradi) */
+  transform: translateY(-2px); 
 }
 
-/* --- "Clone project" Tugmasi Stili --- */
+/* "Clone project" Tugmasi */
 .clone-btn {
   background-color: #4f46e5;
   color: #ffffff !important;
   padding: 10px 24px;
   border-radius: 8px;
   font-weight: 600;
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25); /* Tugma ostidagi neon soya */
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25); 
 }
 
 .clone-btn:hover {
@@ -98,5 +96,71 @@
   transform: translateY(-1px);
 }
 
+/* 📱 HAMBURGER TUGMASI (Kompyuterda yashirin bo'ladi) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1001;
+}
 
- 
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #eff0f5;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+/* 🎯 RESPONSIV QISMI (Ekran 992px dan kichrayganda ishga tushadi) */
+@media (max-width: 992px) {
+  .hamburger {
+    display: flex; /* Hamburger tugmasi ko'rinadi */
+  }
+
+  /* Menyu telefon rejimida tepadan pastga qarab ochiladigan qutiga aylanadi */
+  .nav-menu {
+    position: fixed;
+    top: -100%; /* Default holatda tepada yashirin turadi */
+    left: 0;
+    width: 100%;
+    background-color: #232536;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Hamburger bosilganda menyuni ko'rsatish */
+  .nav-menu.active {
+    top: 76px; /* Navbardan pastroq masofada to'liq ochiladi */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* X tugmasiga aylantirish animatsiyasi (Hamburger bosilganda) */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; /* O'rtadagi chiziq yo'qoladi */
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg); /* Birinchi chiziq buriladi */
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg); /* Uchinchi chiziq teskari buriladi */
+  }
+
+  .clone-btn {
+    width: 80%; /* Tugma telefonda eniga kattaroq va chiroyli chiqadi */
+    text-align: center;
+  }
+}
