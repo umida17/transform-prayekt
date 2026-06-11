@@ -163,7 +163,7 @@
 /* --- 4. OUR EXPERTISE --- */
 .expertise-section {
   padding: 100px 0;
-  background-color: #f4f6fc; /* Yumshoq och havorang fon */
+  background-color: #f4f6fc;
 }
 .expertise-container {
   display: flex;
@@ -231,7 +231,6 @@
   opacity: 0.6;
   margin: 0;
 }
-/* Eng oxirgi karta ostidagi maxsus chiziq dekoratsiyasi */
 .exp-bottom-line {
   position: absolute;
   bottom: 0;
@@ -241,159 +240,178 @@
   background: linear-gradient(to right, #ff944d 30%, #ffd1b3 30%, #ffd1b3 70%, #5d5bfa 70%);
 }
 
-/* --- 5. FOOTER / CONTACT SECTION --- */
-.company-footer-section {
-  padding-top: 100px;
+/* --- 5. 🆕 OUR VISION SECTION (YANGI) --- */
+.our-vision-section {
+  padding: 100px 0 60px 0;
   background-color: #ffffff;
 }
-.footer-top-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  padding-bottom: 80px;
-}
-.footer-left-talk {
-  flex: 1.1;
-}
-.f-logo {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-.footer-left-talk h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 15px 0;
-}
-.footer-left-talk h3 {
-  font-size: 1.6rem;
-  font-weight: 700;
+.vision-mini-tag {
   color: #ff944d;
-  margin: 0 0 40px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 20px;
 }
-.contact-details p {
-  margin: 0;
-  font-size: 1rem;
-}
-.contact-details .phone {
+.vision-top h2 {
+  font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
 }
-.contact-details .email {
-  opacity: 0.8;
+.vision-top p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.7;
+  max-width: 700px;
+  margin-bottom: 40px;
 }
-.divider-line {
+.vision-banner {
   width: 100%;
-  max-width: 300px;
-  height: 1px;
-  background-color: #e4e4e4;
-  margin: 25px 0;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }
-.contact-details .address {
+.vision-banner img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.vision-banner:hover img {
+  transform: scale(1.02);
+}
+
+/* --- 6. 🆕 MEET OUR TEAM SECTION (YANGI) --- */
+.meet-team-section {
+  padding: 80px 0 120px 0;
+  background-color: #ffffff;
+}
+.team-header {
+  margin-bottom: 60px;
+}
+.team-mini-tag {
+  color: #5d5bfa;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 15px;
+}
+.team-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+}
+.team-header p {
+  font-size: 1rem;
   line-height: 1.6;
   opacity: 0.6;
 }
 
-/* O'ng tomon havolalar ustunlari */
-.footer-right-links {
-  flex: 1.4;
+/* 8 talik mukammal grid tizimi */
+.team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-.link-column h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0 0 25px 0;
+.team-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #f4f6fc;
+  border-radius: 2px;
   cursor: pointer;
 }
-.link-column p {
-  font-size: 0.95rem;
-  opacity: 0.6;
-  margin-bottom: 18px;
-  cursor: pointer;
-  transition: color 0.2s ease, opacity 0.2s ease;
+.team-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 360px;
 }
-.link-column p:hover {
-  color: #5d5bfa;
-  opacity: 1;
+.team-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.4s ease;
 }
 
-/* Contact us tugmasi naqshi */
-.contact-us-link {
+/* Hover effekti (Rasm to'q tusga kirib matn va ijtimoiy tarmoqlar chiqadi) */
+.team-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 33, 48, 0.9);
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 40px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+.overlay-info h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
   font-weight: 700;
-  cursor: pointer;
+  margin: 0 0 5px 0;
 }
-.c-decor-bar {
-  width: 25px;
-  height: 8px;
-  background-color: #ff944d;
-  display: inline-block;
-  transition: width 0.3s ease;
-}
-.contact-us-link:hover .c-decor-bar {
-  width: 35px;
-  background-color: #5d5bfa;
-}
-
-/* Eng pastki info panel */
-.footer-bottom-bar {
-  background-color: #ffe9da;
-  padding: 30px 0;
-}
-.bottom-bar-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.copyright {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-.copyright .year {
-  font-weight: 400;
-  font-size: 0.95rem;
+.overlay-info p {
+  color: #ffffff;
+  font-size: 0.9rem;
   opacity: 0.7;
-  margin-left: 10px;
+  margin: 0 0 25px 0;
 }
-.social-icons {
+.team-socials {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
-.social-icons a {
-  text-decoration: none;
-  font-size: 1.2rem;
+.team-socials span {
+  font-size: 1.1rem;
   transition: transform 0.2s ease;
 }
-.social-icons a:hover {
-  transform: scale(1.2);
+.team-socials span:hover {
+  transform: scale(1.3);
+}
+
+.team-card:hover .team-hover-overlay {
+  opacity: 1;
+}
+.team-card:hover .team-img-wrapper img {
+  filter: blur(1px);
 }
 
 /* --- 📱 RESPONSIVE DESIGN --- */
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 992px) {
   .company-hero-row,
   .story-container,
-  .expertise-container,
-  .footer-top-row {
+  .expertise-container {
     flex-direction: column;
     gap: 40px;
   }
   .company-gallery-grid,
-  .footer-right-links {
+  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .story-right-stats {
     width: 100%;
   }
+  .vision-banner img {
+    height: 320px;
+  }
 }
 @media (max-width: 600px) {
   .company-gallery-grid,
-  .footer-right-links,
-  .story-right-stats {
+  .story-right-stats,
+  .team-grid {
     grid-template-columns: 1fr;
   }
   .logos-flex {
@@ -401,7 +419,8 @@
     gap: 20px;
   }
   .company-main-title,
-  .footer-left-talk h2 {
+  .vision-top h2,
+  .team-header h2 {
     font-size: 2rem;
   }
 }
