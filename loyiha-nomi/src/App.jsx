@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Campanents/Navbar/Navbar'; 
 import Home from './Campanents/Home/Home'; 
-import Footer from './Campanents/Footer/Footer'; // 1. Footerni shu yerga import qildik
+import Footer from './Campanents/Footer/Footer'; 
+import Service from './Campanents/Service/Service'; // ✅ Service sahifasi xatosiz import qilindi
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/service" element={<div>Service sahifasi</div>} />
+        
+        {/* ✅ Eski vaqtinchalik div o'rniga Service komponenti qo'yildi */}
+        <Route path="/service" element={<Service />} /> 
+        
         <Route path="/company" element={<div>Company sahifasi</div>} />
       </Routes>
       
