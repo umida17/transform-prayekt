@@ -1,5 +1,6 @@
 import React from 'react';
 import './Service.css';
+import Featur from '../../assets/Featur.png'; // Siz yuklagan rasm o'z joyida
 
 const Service = () => {
   return (
@@ -137,31 +138,99 @@ const Service = () => {
         </div>
       </section>
 
-      {/* 3. TECHNICAL SUPPORT DETAIL SECTION */}
-      <section className="service-detail">
-        <div className="container service-detail-container">
+      {/* 3. ALL SERVICES DETAILS (SHAXMAT TARTIBIDA) */}
+      <section className="services-details-block">
+        <div className="container">
           
-          {/* Chap tomon matnlar */}
-          <div className="service-detail-text">
-            <span className="detail-mini-title">Technical Support</span>
-            <h2 className="detail-main-title">
-              Best in class tech support for your company. We become your tech backbone
-            </h2>
-            <p className="detail-desc">
-              Through True Rich Attended does no end it his mother since real had half <br />
-              every him case in packages enquire we up ecstatic unsatiable saw his giving <br />
-              Remain expense you position concluded. Through True Rich Attended does no <br />
-              end it his mother since real had half every.
-            </p>
+          {/* Service 1: Technical Support (Rasm o'ngda - Sizning Featur.png rasmingiz) */}
+          <div className="detail-row" id="tech">
+            <div className="detail-text-side">
+              <span className="detail-mini-title">Technical Support</span>
+              <h2 className="detail-main-title">Best in class tech support for your company. We become your tech backbone</h2>
+              <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.</p>
+            </div>
+            <div className="detail-image-side">
+              <img src={Featur} alt="Technical Support Team" className="detail-img" />
+            </div>
           </div>
 
-          {/* O'ng tomon rasm qismi */}
-          <div className="service-detail-image-side">
-            <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" 
-              alt="Technical Support Team" 
-              className="detail-img"
-            />
+          {/* Service 2: Development (Rasm chapda) */}
+          <div className="detail-row reverse" id="dev">
+            <div className="detail-text-side">
+              <span className="detail-mini-title">Development</span>
+              <h2 className="detail-main-title">Bring your ideas to reality with certified team of developers, working with latest technologies</h2>
+              <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+            </div>
+            <div className="detail-image-side">
+              <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600" alt="Development" className="detail-img" />
+            </div>
+          </div>
+
+          {/* Service 3: AWS/Azure (Rasm o'ngda) */}
+          <div className="detail-row" id="aws">
+            <div className="detail-text-side">
+              <span className="detail-mini-title">AWS/Azure</span>
+              <h2 className="detail-main-title">We help you deploy, manage and secure your application on leading web services</h2>
+              <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+            </div>
+            <div className="detail-image-side">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600" alt="AWS Azure" className="detail-img" />
+            </div>
+          </div>
+
+          {/* Service 4: Consulting (Rasm chapda - Maxsus binafsharang borderli) */}
+          <div className="detail-row reverse" id="consulting">
+            <div className="detail-text-side">
+              <span className="detail-mini-title">Consulting</span>
+              <h2 className="detail-main-title">Get advice from world class professionals</h2>
+              <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+            </div>
+            <div className="detail-image-side purple-border">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=600" alt="Consulting" className="detail-img" />
+            </div>
+          </div>
+
+          {/* Service 5: Information Technology (Rasm o'ngda) */}
+          <div className="detail-row" id="it">
+            <div className="detail-text-side">
+              <span className="detail-mini-title">Information Technology</span>
+              <h2 className="detail-main-title">We want to get local identification in every corner of the world in this era of global citizenship.</h2>
+              <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
+            </div>
+            <div className="detail-image-side">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600" alt="IT" className="detail-img" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 4. NEWSLETTER BANNER SECTION */}
+      <section className="newsletter-section">
+        <div className="container newsletter-box">
+          
+          {/* Chap burchak geometrik naqshlari */}
+          <div className="news-decor-left">
+            <span className="nd-orange"></span>
+            <span className="nd-blue"></span>
+          </div>
+
+          {/* O'ng burchak geometrik naqshlari */}
+          <div className="news-decor-right">
+            <span className="nd-orange-right"></span>
+            <span className="nd-light-orange"></span>
+            <span className="nd-blue-bottom"></span>
+          </div>
+
+          {/* Kontent */}
+          <div className="newsletter-content">
+            <div className="news-text">
+              <span className="news-tag">NEWSLETTER</span>
+              <h2>Subscribe our News Letter <br /> to get Latest Updates.</h2>
+            </div>
+            <div className="news-input-wrapper">
+              <input type="email" placeholder="Paresh@Pixelo.com" className="news-input" />
+            </div>
           </div>
 
         </div>

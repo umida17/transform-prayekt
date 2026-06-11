@@ -1,13 +1,14 @@
 /* ===================================================
-   🎨 FINSWEET SERVICE PAGE STYLES
+   🎨 FINSWEET SERVICE PAGE STYLES (WITH ADVANCED HOVERS)
    =================================================== */
 .service-page {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1d2130;
+  overflow-x: hidden;
 }
 
-/* Umumiy kichik yorliqlar (Tags) */
+/* Umumiy yorliqlar (Tags) */
 .section-tag {
   color: #1d2130;
   font-size: 0.85rem;
@@ -19,10 +20,10 @@
 }
 
 /* ---------------------------------------------------
-   1. HERO SECTION STYLES
+   1. HERO SECTION & HOVERS
    --------------------------------------------------- */
 .service-hero {
-  background-color: #ffe9da; /* Och krem foni */
+  background-color: #ffe9da;
   padding: 100px 0;
 }
 
@@ -51,11 +52,12 @@
   margin-bottom: 40px;
 }
 
-/* Kvadrat dekoratsiyali chiroyli tugma */
+/* ⚡ Request Quote Tugmasi Animatsiyasi */
 .hero-btn-wrapper {
   display: flex;
   align-items: center;
   position: relative;
+  width: fit-content;
 }
 
 .hero-btn-decor {
@@ -65,6 +67,8 @@
   position: absolute;
   left: -6px;
   top: -6px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 2;
 }
 
 .btn-request-quote {
@@ -78,14 +82,33 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  transition: background-color 0.2s ease;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Tugma bosilganda va sichqoncha kelganda */
+.hero-btn-wrapper:hover .hero-btn-decor {
+  transform: scale(1.5) rotate(90deg);
 }
 
 .btn-request-quote:hover {
   background-color: #4441e5;
+  box-shadow: 0 10px 25px rgba(93, 91, 250, 0.35);
 }
 
-/* O'ng tomon ro'yxat */
+.btn-request-quote:active {
+  transform: scale(0.98);
+}
+
+.btn-request-quote span {
+  transition: transform 0.3s ease;
+}
+
+.btn-request-quote:hover span {
+  transform: translateX(6px); /* Arrow o'ngga suriladi */
+}
+
+/* ⚡ O'ng tomon Menyu Hoverlari */
 .service-hero-right {
   flex: 0.8;
 }
@@ -99,34 +122,51 @@
   gap: 25px;
 }
 
+.service-list-menu li {
+  position: relative;
+}
+
 .service-list-menu li a {
   color: #1d2130;
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 700;
   opacity: 0.4;
-  transition: opacity 0.2s ease, color 0.2s ease;
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  transform-origin: left;
 }
 
-.service-list-menu li.active a,
+/* Aktiv bo'lmagan linklar ustiga kelganda */
 .service-list-menu li a:hover {
-  opacity: 1;
+  opacity: 0.8;
+  color: #5d5bfa;
+  transform: translateX(8px);
 }
 
+/* Aktiv (Development) link effekti */
 .service-list-menu li.active a {
+  opacity: 1;
+  color: #1d2130;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 280px;
+  max-width: 320px;
+  transform: none;
 }
 
 .service-list-menu li.active a span {
   font-size: 1.5rem;
-  color: #1d2130;
+  animation: arrowBounce 1.5s infinite ease-in-out;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(8px); }
 }
 
 /* ---------------------------------------------------
-   2. PROCESS SECTION STYLES
+   2. PROCESS SECTION & HOVERS (6 KARTA)
    --------------------------------------------------- */
 .service-process {
   padding: 100px 0;
@@ -154,10 +194,6 @@
   margin: 0;
 }
 
-.process-top-logo-decor {
-  display: flex;
-  margin-top: 20px;
-}
 .process-top-logo-decor .p-orange {
   background-color: #ff944d;
   width: 12px;
@@ -169,7 +205,7 @@
   height: 12px;
 }
 
-/* Qadamlar Grid tizimi (6 ta karta) */
+/* ⚡ Kartalar Grid va Mikrouzaro ta'sirlar */
 .process-steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -183,6 +219,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Karta ustiga kelganda tepaga ko'tarilish va soya */
+.step-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(29, 33, 48, 0.08);
 }
 
 .step-card-header {
@@ -192,20 +239,37 @@
   margin-bottom: 25px;
 }
 
+/* Ikonka animatsiyasi */
 .step-icon {
   font-size: 1.6rem;
+  transition: transform 0.4s ease;
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.25) rotate(-10deg);
 }
 
 .step-number {
   font-size: 1.2rem;
   font-weight: 700;
   opacity: 0.2;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.step-card:hover .step-number {
+  opacity: 1;
+  color: #5d5bfa;
 }
 
 .step-card h4 {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0 0 15px 0;
+  transition: color 0.3s ease;
+}
+
+.step-card:hover h4 {
+  color: #5d5bfa;
 }
 
 .step-card p {
@@ -215,13 +279,18 @@
   margin: 0;
 }
 
-/* Kartalarning pastki qismidagi maxsus rangli chiziqlar */
+/* Pastki chiziqlar animatsiyasi */
 .step-bottom-line {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 4px;
+  transition: height 0.3s ease;
+}
+
+.step-card:hover .step-bottom-line {
+  height: 6px; /* Hover bo'lganda biroz qalinlashadi */
 }
 
 .orange-blue-line {
@@ -238,8 +307,12 @@
   bottom: 1px;
 }
 
+.step-card:hover .gray-line {
+  border-bottom: 2px solid #5d5bfa;
+}
+
 /* ---------------------------------------------------
-   3. DETAIL SECTION STYLES
+   3. DETAIL SECTION & IMAGE ANIMATION
    --------------------------------------------------- */
 .service-detail {
   padding: 80px 0 120px 0;
@@ -279,8 +352,12 @@
   margin: 0;
 }
 
+/* Rasm ramkasi (Zoom effekti uchun) */
 .service-detail-image-side {
   flex: 0.8;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .detail-img {
@@ -289,6 +366,12 @@
   height: auto;
   object-fit: cover;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Rasm ustiga kelganda sekin yaqinlashadi */
+.service-detail-image-side:hover .detail-img {
+  transform: scale(1.06);
 }
 
 /* ---------------------------------------------------
