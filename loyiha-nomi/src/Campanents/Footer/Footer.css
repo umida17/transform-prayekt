@@ -215,7 +215,6 @@
   }
   .footer-links-side {
     align-items: flex-start;
-    min-height: auto;
     width: 100%;
     gap: 40px;
   }
