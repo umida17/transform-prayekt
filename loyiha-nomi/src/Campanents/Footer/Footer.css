@@ -1,0 +1,235 @@
+/* ===================================================
+   🎨 FINSWEET FOOTER STYLES (EXACT REPLICA)
+   =================================================== */
+.footer-section {
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  padding-top: 80px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+
+/* --- CHAP TARAFI --- */
+.footer-brand-side {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Logo shakli (Kvadratchalar) */
+.footer-logo-decor {
+  display: flex;
+  margin-bottom: 30px;
+}
+.footer-logo-decor .logo-orange {
+  background-color: #ff944d;
+  width: 15px;
+  height: 25px;
+}
+.footer-logo-decor .logo-blue {
+  background-color: #5d5bfa;
+  width: 15px;
+  height: 15px;
+}
+
+.footer-heading {
+  color: #1d2130;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 35px 0;
+}
+
+.footer-subheading {
+  color: #1d2130;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+  max-width: 260px;
+}
+
+.contact-link {
+  color: #1d2130;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.footer-address {
+  color: #1d2130;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* --- O'NG TARAFI (LINKLAR) --- */
+.footer-links-side {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 380px;
+}
+
+.footer-menu-grid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+.footer-menu-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu-col.no-title {
+  padding-top: 36px; /* Sarlavhasi yo'q ustunni to'g'rilash */
+}
+
+.footer-menu-col .menu-title {
+  color: #1d2130;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
+
+.footer-menu-col li {
+  margin-bottom: 14px;
+}
+
+.footer-menu-col li a {
+  color: #1d2130;
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.footer-menu-col li a:hover {
+  opacity: 1;
+  color: #5d5bfa;
+}
+
+/* Tugma qismi va uning oldidagi rangli chiziq */
+.footer-contact-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.btn-decor {
+  display: flex;
+  height: 12px;
+}
+.btn-decor-orange {
+  background-color: #ff944d;
+  width: 12px;
+  height: 12px;
+}
+.btn-decor-blue {
+  background-color: #5d5bfa;
+  width: 30px;
+  height: 12px;
+}
+
+.footer-contact-btn {
+  color: #1d2130;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- BOTTOM QISMI (KREM FON) --- */
+.footer-bottom {
+  background-color: #ffe9da; /* Rasmda aks etgan och krem foni */
+  padding: 30px 0;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #1d2130;
+}
+
+.footer-copyright strong {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.footer-copyright span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-socials a {
+  color: #1d2130;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #5d5bfa;
+}
+
+/* --- RESPONSIVE (MOBIL) --- */
+@media (max-width: 850px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-brand-side {
+    max-width: 100%;
+  }
+  .footer-links-side {
+    align-items: flex-start;
+    min-height: auto;
+    width: 100%;
+    gap: 40px;
+  }
+  .footer-menu-grid {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footer-menu-col.no-title {
+    padding-top: 0;
+  }
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
