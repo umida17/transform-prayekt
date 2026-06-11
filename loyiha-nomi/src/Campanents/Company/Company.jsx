@@ -1,5 +1,7 @@
 import React from 'react';
 import './Company.css';
+import negrlar from '../../assets/negrlar.png';
+
 
 const Company = () => {
   return (
@@ -28,7 +30,7 @@ const Company = () => {
           {/* 3 ta rasm galereyasi */}
           <div className="company-gallery-grid">
             <div className="gallery-img-box">
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600" alt="Meeting 1" />
+              <img src={negrlar} alt="Meeting 1" />
             </div>
             <div className="gallery-img-box">
               <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600" alt="Meeting 2" />
@@ -130,70 +132,6 @@ const Company = () => {
 
           </div>
 
-        </div>
-      </section>
-
-      {/* 5. FOOTER / CONTACT SECTION */}
-      <section className="company-footer-section">
-        <div className="container footer-top-row">
-          
-          <div className="footer-left-talk">
-            <div className="f-logo">🔸🔷</div>
-            <h2>Let's make <br /> something special</h2>
-            <h3>Let's talk! 👋</h3>
-            <div className="contact-details">
-              <p className="phone">020 7993 2905</p>
-              <p className="email">hi@finsweet.com</p>
-              <div className="divider-line"></div>
-              <p className="address">DLF Cybercity, Bhubaneswar, <br /> India, 752050</p>
-            </div>
-          </div>
-
-          <div className="footer-right-links">
-            <div className="link-column">
-              <h4>Home</h4>
-              <h4>Service</h4>
-              <h4>Company</h4>
-              <h4>Career</h4>
-              <h4>News</h4>
-            </div>
-            <div className="link-column">
-              <h4>Service</h4>
-              <p>Technical support</p>
-              <p>Testing</p>
-              <p>Development</p>
-              <p>AWS/Azure</p>
-              <p>Consulting</p>
-              <p>Information Technology</p>
-            </div>
-            <div className="link-column">
-              <h4>Resourses</h4>
-              <p>About Us</p>
-              <p>Testimonial</p>
-              <p>Privacy Policy</p>
-              <p>Terms of use</p>
-              <p>Blog</p>
-              
-              <div className="contact-us-link">
-                <span className="c-decor-bar"></span>
-                <span>Contact Us <span>→</span></span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        {/* Eng pastki qora chiziqli qism */}
-        <div className="footer-bottom-bar">
-          <div className="container bottom-bar-flex">
-            <span className="copyright">{"{Finsweet"} <span className="year">©2021 Finsweet</span></span>
-            <div className="social-icons">
-              <a href="#fb">📘</a>
-              <a href="#tw">🐦</a>
-              <a href="#ig">📷</a>
-              <a href="#in">💼</a>
-            </div>
-          </div>
         </div>
       </section>
 

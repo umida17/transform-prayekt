@@ -4,15 +4,16 @@ import Navbar from './Campanents/Navbar/Navbar';
 import Home from './Campanents/Home/Home'; 
 import Footer from './Campanents/Footer/Footer'; 
 import Service from './Campanents/Service/Service'; 
+import Company from './Campanents/Company/Company'; // 👈 MANA SHU IMPORT QOLIB KETGAN EDI!
 
-// 🎯 1. Siz xohlagan Layout komponenti (Faqat bitta fayl ichida export default bo'lmasligi uchun pastda oddiy funksiya qildik)
+// 🎯 1. Layout komponenti
 const Layout = () => {
   return (
     <div>
       {/* Navbar doimiy tepada turadi */}
       <Navbar />
       
-      {/* 💡 Outlet - bu sahifaga qarab o'rtada Home yoki Service almashib chiqadigan joy */}
+      {/* Outlet - sahifaga qarab o'rtada Home, Service yoki Company almashib chiqadigan joy */}
       <Outlet />
       
       {/* Footer doimiy pastda turadi */}
@@ -33,7 +34,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="service" element={<Service />} />
-          <Route path="company" element={<div>Company sahifasi</div>} />
+          <Route path="company" element={<Company />} /> {/* 👈 BU YERGA KOMPONENTNI QO'SHDIK */}
         </Route>
 
       </Routes>
@@ -41,5 +42,4 @@ function App() {
   );
 }
 
-// Faylda faqat BITTA export default qoldi - endi oq ekran bermaydi!
 export default App;
