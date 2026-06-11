@@ -1,7 +1,5 @@
 import React from 'react';
 import './Footer.css';
-// Ikonkalar uchun (agar loyihada react-icons bo'lsa, bo'lmasa oddiy so'z yozib qo'yish mumkin)
-// import FaFacebookF, { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -90,10 +88,10 @@ const Footer = () => {
           </div>
           
           <div className="footer-socials">
-            <a href="#facebook" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="#twitter" aria-label="Twitter"><FaTwitter /></a>
-            <a href="#instagram" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#linkedin" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="#facebook" aria-label="Facebook">FB</a>
+            <a href="#twitter" aria-label="Twitter">TW</a>
+            <a href="#instagram" aria-label="Instagram">IG</a>
+            <a href="#linkedin" aria-label="LinkedIn">LN</a>
           </div>
         </div>
       </div>
