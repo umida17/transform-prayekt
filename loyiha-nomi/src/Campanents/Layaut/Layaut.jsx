@@ -8,6 +8,7 @@ const Layaut = () => {
     <div>
       <Navbar/>
      <Home/>
+     <Footer/>
     </div>
   )
 }

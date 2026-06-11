@@ -98,11 +98,7 @@ const Home = () => {
             </div>
             <div className="about-right">
               <h3 className="about-sub-title">The Era Of Technology.</h3>
-              <p className="about-desc">
-                Through True Rich Attended does no and it his mother since real had 
-                half every him case in packages enquire we up ecstatic unsatiable 
-                saw his giving Remain expense you position concluded.
-              </p>
+              <p>Through True Rich Attended does no and it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.</p>
             </div>
           </div>
 
@@ -424,28 +420,43 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 8. NEWSLETTER SECTION (YANGI QO'SHILGAN QISM) */}
+      {/* 📐 8. NEWSLETTER SECTION (RASM BILAN 100% BIR XIL) */}
       <section className="newsletter-section">
-        <div className="container newsletter-container">
-          <div className="newsletter-left">
-            <span className="section-tag">NEWSLETTER</span>
-            <h2 className="newsletter-title">
-              Subscribe to our newsletter <br /> to get latest updates
-            </h2>
+        <div className="container">
+          
+          <div className="newsletter-box">
+            {/* Chap burchakdagi to'q sariq va och ko'k kvadrat shakllar */}
+            <div className="newsletter-decor-left">
+              <span className="decor-orange-1"></span>
+              <span className="decor-orange-2"></span>
+              <span className="decor-blue-1"></span>
+            </div>
+            
+            {/* Yozuvlar va Input */}
+            <div className="newsletter-content">
+              <div className="newsletter-text-side">
+                <span className="newsletter-tag">NEWSLETTER</span>
+                <h2 className="newsletter-title">
+                  Subscribe our News Letter <br /> to get Latest Updates.
+                </h2>
+              </div>
+              <div className="newsletter-action-side">
+                <input 
+                  type="email" 
+                  placeholder="Paresh@Pixeto.com" 
+                  className="newsletter-input" 
+                />
+              </div>
+            </div>
+
+            {/* O'ng chekkadagi chiziqli dekoratsiyalar */}
+            <div className="newsletter-decor-right">
+              <span className="decor-bar-orange"></span>
+              <span className="decor-bar-light"></span>
+              <span className="decor-bar-blue"></span>
+            </div>
           </div>
-          <div className="newsletter-right">
-            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="Enter your email address" 
-                className="newsletter-input" 
-                required
-              />
-              <button type="submit" className="btn-subscribe">
-                Subscribe <span className="arrow">→</span>
-              </button>
-            </form>
-          </div>
+
         </div>
       </section>
 
