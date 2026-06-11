@@ -7,10 +7,9 @@ const Layaut = () => {
   return (
     <div>
       <Navbar/>
-     <Home/>
-     <Footer/>
+      <Home/>
+      <Footer/>
     </div>
   )
 }
-
 export default Layaut
