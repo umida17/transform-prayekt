@@ -1,8 +1,7 @@
 import React from 'react';
 import './Company.css';
 
-// Rasmlar importi
-import negrlar from '../../assets/negrlar.png';
+ import negrlar from '../../assets/negrlar.png';
 import Image from '../../assets/Image 2 (3).png';
 import ishxona from '../../assets/ishxona.png';
 import Images from '../../assets/Image (33).png';
@@ -218,7 +217,7 @@ const Company = () => {
           </div>
         </div>
       </section>
-      
+
 
     </div>
   );
