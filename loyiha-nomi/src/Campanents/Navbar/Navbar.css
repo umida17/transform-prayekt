@@ -146,8 +146,7 @@
     visibility: visible;
   }
 
-  /* X tugmasiga aylantirish animatsiyasi (Hamburger bosilganda) */
-  .hamburger.active .bar:nth-child(2) {
+   .hamburger.active .bar:nth-child(2) {
     opacity: 0; /* O'rtadagi chiziq yo'qoladi */
   }
   
