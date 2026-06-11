@@ -425,6 +425,53 @@ const Home = () => {
         </div>
       </section>
 
+
+      {/* 🎯 8. NEWSLETTER SECTION */}
+      <section className="newsletter-section">
+        <div className="container">
+          <div className="newsletter-box">
+            
+            {/* Chap yuqori burchakdagi dekoratsiya */}
+            <div className="newsletter-decor-left">
+              <span className="decor-orange-1"></span>
+              <span className="decor-orange-2"></span>
+              <span className="decor-blue-1"></span>
+            </div>
+
+            {/* O'ng chetdagi dekorativ chiziqli bloklar */}
+            <div className="newsletter-decor-right">
+              <span className="decor-bar-orange"></span>
+              <span className="decor-bar-light"></span>
+              <span className="decor-bar-blue"></span>
+            </div>
+
+            <div className="newsletter-content">
+              <div className="newsletter-text">
+                <span className="newsletter-tag">NEWSLETTER</span>
+                <h2 className="newsletter-title">
+                  Subscribe our News Letter <br /> to get Latest Updates.
+                </h2>
+              </div>
+              
+              {/* Input ishlashi uchun <form> boshqaruvi */}
+              <form onSubmit={handleSubscribe} className="newsletter-action">
+                <input 
+                  type="email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Paresh@Pixelo.com" 
+                  className="newsletter-input"
+                  required
+                />
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      
+
     </div>
   );
 };
