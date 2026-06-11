@@ -3,7 +3,7 @@ import './Service.css';
 import Featur from '../../assets/Featur.png'; // Siz yuklagan rasm o'z joyida
 import dastur from '../../assets/dastur.png';
 import kanpaniya from '../../assets/kanpaniya.png';
-
+import jamoa from '../../assets/jamoa.png';
 
 
 
@@ -191,7 +191,7 @@ const Service = () => {
               <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
             </div>
             <div className="detail-image-side purple-border">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=600" alt="Consulting" className="detail-img" />
+              <img src={jamoa} alt="Consulting" className="detail-img" />
             </div>
           </div>
 
