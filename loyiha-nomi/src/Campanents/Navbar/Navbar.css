@@ -152,11 +152,11 @@
   }
   
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg); /* Birinchi chiziq buriladi */
+    transform: translateY(9px) rotate(45deg);  
   }
   
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg); /* Uchinchi chiziq teskari buriladi */
+    transform: translateY(-9px) rotate(-45deg);  
   }
 
   .clone-btn {
