@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 // Ikonkalar uchun (agar loyihada react-icons bo'lsa, bo'lmasa oddiy so'z yozib qo'yish mumkin)
-import { FaFacebookF, { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import FaFacebookF, { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
