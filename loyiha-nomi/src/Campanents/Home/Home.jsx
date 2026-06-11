@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import header from '../../assets/Header.png';
-import images from '../../assets/Image.png'
-import majlis from '../../assets/majlis.png'
-import hamkor from '../../assets/hamkor.png'
-import dugona from '../../assets/dugona.png'
-import ish from '../../assets/ish.png'
+import images from '../../assets/Image.png';
+import majlis from '../../assets/majlis.png';
+import hamkor from '../../assets/hamkor.png';
+import dugona from '../../assets/dugona.png';
+import ish from '../../assets/ish.png';
 
 // 🚀 Sonlar aylanib o'sishi uchun maxsus dinamik komponent
 const Counter = ({ endValue, duration = 2000 }) => {
@@ -14,20 +14,21 @@ const Counter = ({ endValue, duration = 2000 }) => {
   useEffect(() => {
     let start = 0;
     const end = parseInt(endValue, 10);
-    if (start === end) return;
+    if (start === end || isNaN(end)) return;
 
-    // Har bir qadamda qanchaga o'sishi
     const totalMiliseconds = duration;
-    const incrementTime = Math.max(Math.floor(totalMiliseconds / end), 10);
+    const stepTime = 30; // Har 30 millisoniyada yangilanadi
+    const totalSteps = totalMiliseconds / stepTime;
+    const increment = Math.ceil(end / totalSteps);
     
     const timer = setInterval(() => {
-      start += Math.ceil(end / (totalMiliseconds / incrementTime));
+      start += increment;
       if (start >= end) {
         clearInterval(timer);
         start = end;
       }
       setCount(start);
-    }, incrementTime);
+    }, stepTime);
 
     return () => clearInterval(timer);
   }, [endValue, duration]);
@@ -39,7 +40,7 @@ const Home = () => {
   return (
     <div className="home-page">
       
-      {/* HERO SECTION */}
+      {/* 1. HERO SECTION */}
       <section className="hero-section">
         <div className="container hero-container"> 
           
@@ -85,7 +86,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
+      {/* 2. ABOUT SECTION */}
       <section className="about-section">
         <div className="container">
           
@@ -158,7 +159,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 3. EXPERTISE SECTION (YANGI QISM) */}
+      {/* 3. EXPERTISE SECTION */}
       <section className="expertise-section">
         <div className="container expertise-container">
           
@@ -201,7 +202,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 4. SERVICES SECTION (YANGI QISM) */}
+      {/* 4. SERVICES SECTION */}
       <section className="services-section">
         <div className="container">
           
@@ -245,7 +246,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 5. OUR PROCESS SECTION */}
+      {/* 5. OUR PROCESS SECTION */}
       <section className="process-section">
         <div className="container">
           
@@ -260,7 +261,6 @@ const Home = () => {
                 him case in packages enquire we up ecstatic unsatiable.
               </p>
             </div>
-            {/* Tepangizdagi o'ng burchakdagi kichik dekorativ element */}
             <div className="process-top-accent">
               <span className="accent-square-orange"></span>
               <span className="accent-square-blue"></span>
@@ -315,16 +315,6 @@ const Home = () => {
               </div>
               <h4>Deployment</h4>
               <p>We aim to attain the greatest satisfaction for our clients and be one of the prominent.</p>
-              <div className="process-card-line gray-line"></div>
-            </div>
-
-            <div className="process-card">
-              <div className="process-card-header">
-                <div className="process-icon">🏢</div>
-                <span className="process-number">06</span>
-              </div>
-              <h4>Maintenance</h4>
-              <p>We aim to attain the greatest satisfaction for our clients and be one of the prominent.</p>
               <div className="process-card-line blue-line"></div>
             </div>
           </div>
@@ -332,51 +322,49 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 6. TESTIMONIALS SECTION */}
+      {/* 6. TESTIMONIALS SECTION */}
       <section className="testimonials-section">
         <div className="container testimonials-container">
           
           <div className="testimonials-left">
             <div className="blue-square-bullet"></div>
-            <h2 className="testimonials-title">Our customers love what we do</h2>
-            <h4 className="testimonials-sub-title">Transform your idea into reality with finsweet</h4>
+            <span className="section-tag">TESTIMONIALS</span>
+            <h2 className="testimonials-title">What Our Clients Say About Us</h2>
             <p className="testimonials-desc">
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.
             </p>
             
             <div className="customer-reviews-group">
               <div className="customer-avatars">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="User 1" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="User 2" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="User 3" />
+                <img src={dugona} alt="User 1" />
+                <img src={ish} alt="User 2" />
+                <img src={majlis} alt="User 3" />
               </div>
               <div className="customer-reviews-text">
-                <strong>30+</strong>
-                <p>Customer Reviews</p>
+                <strong>30k+</strong>
+                <p>Worldwide Trust Clients</p>
               </div>
             </div>
           </div>
 
           <div className="testimonials-right">
             <div className="quote-orange-border"></div>
-            <span className="quote-icon">“</span>
+            <div className="quote-icon">“</div>
+            <p className="quote-text">
+              "Best service ever! The team was highly professional and delivered our product exactly on time. Their attention to detail is truly unmatched."
+            </p>
             
-            <h3 className="quote-text">
-              Finsweet has been a wonderful partner to work with. I have been a customer now for the past few months now and I have had nothing but positive experiences!
-            </h3>
-
             <div className="quote-author-footer">
               <div className="author-info">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="Johnny Andro" />
+                <img src={dugona} alt="Johnny" />
                 <div>
-                  <h5>Johnny Andro</h5>
-                  <span>Director, Company</span>
+                  <h5>Johnny Thomas</h5>
+                  <span>Project Manager</span>
                 </div>
               </div>
-              <div className="logoipsum-placeholder">logoipsum'</div>
+              <div className="logoipsum-placeholder">Logoipsum</div>
             </div>
 
-            {/* Slider nuqtalari */}
             <div className="slider-dots">
               <span className="dot active"></span>
               <span className="dot"></span>
@@ -387,13 +375,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎯 7. LATEST BLOGS SECTION */}
+      {/* 7. LATEST BLOGS SECTION */}
       <section className="blogs-section">
         <div className="container">
           
           <div className="blogs-header">
-            <div className="blue-square-bullet"></div>
-            <h2 className="blogs-main-title">Read our latest blogs & news</h2>
+            <span className="section-tag">OUR BLOG</span>
+            <h2 className="blogs-main-title">Latest Posts From Our Blog</h2>
           </div>
 
           <div className="blogs-grid">
@@ -403,20 +391,20 @@ const Home = () => {
                 <img src={dugona} alt="Blog 1" />
               </div>
               <div className="blog-card-content">
-                <span className="blog-date">Jan 19, 2021</span>
-                <h4>Today's best design trends for digital products</h4>
-                <a href="#read" className="blog-link">Read More <span>→</span></a>
+                <span className="blog-date">28 Jan 2026</span>
+                <h4>How we improved our development speed by 40% with automated testing</h4>
+                <a href="#blog-details" className="blog-link">Read More <span>→</span></a>
               </div>
             </div>
 
             <div className="blog-card">
-              <div className="blog-img-wrapper">"h
+              <div className="blog-img-wrapper">
                 <img src={ish} alt="Blog 2" />
               </div>
               <div className="blog-card-content">
-                <span className="blog-date">Jan 19, 2021</span>
-                <h4>A practical guide to building a brand strategy</h4>
-                <a href="#read" className="blog-link">Read More <span>→</span></a>
+                <span className="blog-date">05 Feb 2026</span>
+                <h4>Design trends that will dominate the SaaS industry in the upcoming years</h4>
+                <a href="#blog-details" className="blog-link">Read More <span>→</span></a>
               </div>
             </div>
 
@@ -425,52 +413,42 @@ const Home = () => {
         </div>
       </section>
 
-
-      {/* 🎯 8. NEWSLETTER SECTION */}
+      {/* 8. NEWSLETTER SECTION */}
       <section className="newsletter-section">
         <div className="container">
+          
           <div className="newsletter-box">
-            
-            {/* Chap yuqori burchakdagi dekoratsiya */}
             <div className="newsletter-decor-left">
               <span className="decor-orange-1"></span>
               <span className="decor-orange-2"></span>
               <span className="decor-blue-1"></span>
             </div>
+            
+            <div className="newsletter-content">
+              <div>
+                <span className="newsletter-tag">NEWSLETTER</span>
+                <h2 className="newsletter-title">
+                  Subscribe our newsletter to <br /> get latest updates & news
+                </h2>
+              </div>
+              <div className="newsletter-action">
+                <input 
+                  type="email" 
+                  placeholder="Enter Your Email" 
+                  className="newsletter-input" 
+                />
+              </div>
+            </div>
 
-            {/* O'ng chetdagi dekorativ chiziqli bloklar */}
             <div className="newsletter-decor-right">
               <span className="decor-bar-orange"></span>
               <span className="decor-bar-light"></span>
               <span className="decor-bar-blue"></span>
             </div>
-
-            <div className="newsletter-content">
-              <div className="newsletter-text">
-                <span className="newsletter-tag">NEWSLETTER</span>
-                <h2 className="newsletter-title">
-                  Subscribe our News Letter <br /> to get Latest Updates.
-                </h2>
-              </div>
-              
-              {/* Input ishlashi uchun <form> boshqaruvi */}
-              <form onSubmit={handleSubscribe} className="newsletter-action">
-                <input 
-                  type="email" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Paresh@Pixelo.com" 
-                  className="newsletter-input"
-                  required
-                />
-              </form>
-            </div>
-
           </div>
+
         </div>
       </section>
-
-      
 
     </div>
   );
