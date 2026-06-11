@@ -1,5 +1,5 @@
 /* ===================================================
-   🎨 FINSWEET COMPANY PAGE STYLES (TOTAL COMPLETE)
+   🎨 FINSWEET COMPANY PAGE STYLES
    =================================================== */
 .company-page {
   font-family: 'Inter', sans-serif;
@@ -59,7 +59,6 @@
   margin-bottom: 50px;
 }
 
-/* Rasm Galereyasi */
 .company-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -114,7 +113,6 @@
   opacity: 0.7;
 }
 
-/* Statistika Grid bloki (Krem fondagi) */
 .story-right-stats {
   flex: 1;
   background-color: #ffe9da;
@@ -246,7 +244,7 @@
   background: linear-gradient(to right, #ff944d 30%, #ffd1b3 30%, #ffd1b3 70%, #5d5bfa 70%);
 }
 
-/* --- 5. 🆕 OUR VISION SECTION --- */
+/* --- 5. OUR VISION SECTION --- */
 .our-vision-section {
   padding: 100px 0 60px 0;
   background-color: #ffffff;
@@ -289,7 +287,7 @@
   transform: scale(1.02);
 }
 
-/* --- 6. 🆕 MEET OUR TEAM SECTION --- */
+/* --- 6. MEET OUR TEAM SECTION --- */
 .meet-team-section {
   padding: 80px 0 120px 0;
   background-color: #ffffff;
@@ -317,7 +315,6 @@
   opacity: 0.6;
 }
 
-/* 8 talik mukammal grid tizimi */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -342,8 +339,6 @@
   display: block;
   transition: filter 0.4s ease;
 }
-
-/* Hover overlay effekti */
 .team-hover-overlay {
   position: absolute;
   top: 0;
@@ -389,9 +384,63 @@
   filter: blur(1px);
 }
 
-/* --- 7. 🆕 COMPANY FOOTER SECTION (Tushib qolgan qismlar tiklandi) --- */
+/* --- 7. 🆕 FOOTER NEWSLETTER & INPUT BLOCK --- */
+.footer-newsletter {
+  background-color: #ffe9da;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+}
+.newsletter-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.newsletter-text p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin: 0;
+  max-width: 500px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  max-width: 450px;
+}
+.newsletter-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #ffffff;
+  color: #1d2130;
+}
+.newsletter-btn {
+  background-color: #1d2130;
+  color: #ffffff;
+  border: none;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+.newsletter-btn:hover {
+  background-color: #5d5bfa;
+}
+
+/* FOOTER CONTENT LINKS */
 .company-footer-section {
-  padding-top: 100px;
+  padding-top: 60px;
   background-color: #ffffff;
 }
 .footer-top-row {
@@ -485,7 +534,6 @@
   background-color: #5d5bfa;
 }
 
-/* Bottom info panel bar */
 .footer-bottom-bar {
   background-color: #ffe9da;
   padding: 30px 0;
@@ -529,17 +577,21 @@
   .company-hero-row,
   .story-container,
   .expertise-container,
-  .footer-top-row {
+  .footer-top-row,
+  .footer-newsletter {
     flex-direction: column;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 30px;
   }
   .company-gallery-grid,
   .team-grid,
   .footer-right-links {
     grid-template-columns: repeat(2, 1fr);
   }
-  .story-right-stats {
+  .story-right-stats,
+  .newsletter-form {
     width: 100%;
+    max-width: 100%;
   }
   .vision-banner img {
     height: 320px;
@@ -549,8 +601,13 @@
   .company-gallery-grid,
   .story-right-stats,
   .team-grid,
-  .footer-right-links {
+  .footer-right-links,
+  .newsletter-form {
     grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .footer-newsletter {
+    padding: 30px;
   }
   .logos-flex {
     flex-wrap: wrap;
@@ -561,5 +618,110 @@
   .team-header h2,
   .footer-left-talk h2 {
     font-size: 2rem;
+  }
+}
+
+
+
+/* --- 7. INPUT / NEWSLETTER SECTION --- */
+.company-newsletter-section {
+  padding: 60px 0 100px 0;
+  background-color: #ffffff;
+}
+
+.newsletter-box {
+  background-color: #ffd1b3; /* Finsweet uslubidagi och sarg'ish/olovrang fon */
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  gap: 40px;
+}
+
+.newsletter-left h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1d2130;
+  margin: 0;
+}
+
+.newsletter-right {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-group-custom {
+  display: flex;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.newsletter-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #1d2130;
+  width: 100%;
+}
+
+.newsletter-input::placeholder {
+  color: #1d2130;
+  opacity: 0.4;
+}
+
+.newsletter-btn {
+  background-color: #1d2130; /* To'q rangli tugma */
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 0 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background-color: #5d5bfa; /* Hover bo'lganda ko'k rangga o'tadi */
+}
+
+/* --- Input bo'limi uchun responsive moslashuv --- */
+@media (max-width: 992px) {
+  .newsletter-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  .newsletter-right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter-left h2 {
+    font-size: 1.8rem;
+  }
+  .input-group-custom {
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    gap: 15px;
+  }
+  .newsletter-input {
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+  .newsletter-btn {
+    padding: 15px;
+    border-radius: 2px;
+    width: 100%;
   }
 }

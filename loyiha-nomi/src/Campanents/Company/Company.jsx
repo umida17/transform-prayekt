@@ -1,14 +1,13 @@
 import React from 'react';
 import './Company.css';
 
-// Siz import qilgan barcha rasmlar
+// Rasmlar importi
 import negrlar from '../../assets/negrlar.png';
 import Image from '../../assets/Image 2 (3).png';
 import ishxona from '../../assets/ishxona.png';
 import Images from '../../assets/Image (33).png';
 
 const Company = () => {
-  // 8 talik jamoa a'zolari ro'yxati (Rasmga moslab yaratilgan array)
   const teamMembers = [
     { id: 1, name: 'Javena Melo', role: 'Support Assist', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400' },
     { id: 2, name: 'Paul Jones', role: 'Lead Developer', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400' },
@@ -43,7 +42,6 @@ const Company = () => {
             </p>
           </div>
 
-          {/* 3 ta rasm galereyasi */}
           <div className="company-gallery-grid">
             <div className="gallery-img-box">
               <img src={negrlar} alt="Meeting 1" />
@@ -61,7 +59,6 @@ const Company = () => {
       {/* 2. OUR STORY & STATS SECTION */}
       <section className="our-story-section">
         <div className="container story-container">
-          
           <div className="story-left-text">
             <span className="story-mini-tag">Our Story ⚡</span>
             <h2>From Startups to Titans of <br /> Industry</h2>
@@ -92,7 +89,6 @@ const Company = () => {
               <p>Experience</p>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -110,7 +106,6 @@ const Company = () => {
       {/* 4. OUR EXPERTISE SECTION */}
       <section className="expertise-section">
         <div className="container expertise-container">
-          
           <div className="expertise-left">
             <span className="expertise-mini-tag">OUR EXPERTISE</span>
             <h2>We want to get local <br /> identification in every <br /> corner of the world in this <br /> era of global citizenship</h2>
@@ -120,7 +115,6 @@ const Company = () => {
           </div>
 
           <div className="expertise-right-cards">
-            
             <div className="expertise-card">
               <div className="exp-icon-box">🧡</div>
               <div className="exp-info">
@@ -145,9 +139,7 @@ const Company = () => {
               </div>
               <div className="exp-bottom-line"></div>
             </div>
-
           </div>
-
         </div>
       </section>
 
@@ -162,7 +154,6 @@ const Company = () => {
             </p>
           </div>
           <div className="vision-banner">
-            {/* O'zingiz import qilgan Images o'zgaruvchisi shu yerga ulandi */}
             <img src={Images} alt="Office Culture" />
           </div>
         </div>
@@ -186,7 +177,6 @@ const Company = () => {
               <div key={member.id} className="team-card">
                 <div className="team-img-wrapper">
                   <img src={member.img} alt={member.name} />
-                  {/* Hover effekti */}
                   <div className="team-hover-overlay">
                     <div className="overlay-info">
                       <h4>{member.name}</h4>
@@ -205,74 +195,30 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 7. COMPANY FOOTER SECTION */}
-      <footer className="company-footer-section">
-        <div className="container">
-          <div className="footer-top-row">
-            
-            <div className="footer-left-talk">
-              <div className="f-logo"><strong>{'{'}Finsweet</strong></div>
-              <h2>Let's talk about <br /> your next project</h2>
-              <h3>Let's Talk ➔</h3>
-              
-              <div className="contact-details">
-                <p className="phone">002 01010101010</p>
-                <p className="email">hello@finsweet.com</p>
-                <div className="divider-line"></div>
-                <p className="address">
-                  Manoel Island, <br />
-                  Gzira, Malta
-                </p>
-              </div>
-            </div>
 
-            <div className="footer-right-links">
-              <div className="link-column">
-                <h4>Our Services</h4>
-                <p>Social Media Marketing</p>
-                <p>Web Development</p>
-                <p>SEO Optimization</p>
-                <p>UI/UX Design</p>
-              </div>
-              <div className="link-column">
-                <h4>Company</h4>
-                <p>About Us</p>
-                <p>Careers</p>
-                <p>Services</p>
-                <p>Blog</p>
-              </div>
-              <div className="link-column">
-                <h4>Connect</h4>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>LinkedIn</p>
-                <p>Instagram</p>
-                
-                <div className="contact-us-link">
-                  <span className="c-decor-bar"></span>
-                  <span>Contact Us</span>
-                </div>
-              </div>
-            </div>
+      <section className="meet-team-section">
+        {/* ... (eski jamoa kodlari shu yerda turibdi) ... */}
+      </section>
 
+      {/* 7. INPUT / NEWSLETTER SECTION (Faqat input bo'limi, footer yo'q) */}
+      <section className="company-newsletter-section">
+        <div className="container newsletter-box">
+          <div className="newsletter-left">
+            <h2>Our newsletter updates <br /> with new designs</h2>
           </div>
-        </div>
-
-        {/* Eng pastki info panel */}
-        <div className="footer-bottom-bar">
-          <div className="container bottom-bar-flex">
-            <div className="copyright">
-              © Finsweet <span className="year">2026</span>
-            </div>
-            <div className="social-icons">
-              <a href="#fb">📘</a>
-              <a href="#tw">🐦</a>
-              <a href="#ln">💼</a>
-              <a href="#ins">📷</a>
+          <div className="newsletter-right">
+            <div className="input-group-custom">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="newsletter-input" 
+              />
+              <button type="button" className="newsletter-btn">Subscribe</button>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+      
 
     </div>
   );
