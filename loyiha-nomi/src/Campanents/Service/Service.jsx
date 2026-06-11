@@ -1,6 +1,7 @@
 import React from 'react';
 import './Service.css';
 import Featur from '../../assets/Featur.png'; // Siz yuklagan rasm o'z joyida
+import dastur from '../../assets/dastur.png';
 
 const Service = () => {
   return (
@@ -162,7 +163,7 @@ const Service = () => {
               <p className="detail-desc">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.</p>
             </div>
             <div className="detail-image-side">
-              <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600" alt="Development" className="detail-img" />
+              <img src={dastur} alt="Development" className="detail-img" />
             </div>
           </div>
 
