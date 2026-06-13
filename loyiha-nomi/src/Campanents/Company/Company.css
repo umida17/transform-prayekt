@@ -1,7 +1,4 @@
-/* ===================================================
-   🎨 FINSWEET COMPANY PAGE STYLES
-   =================================================== */
-.company-page {
+    .company-page {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1d2130;
@@ -14,8 +11,7 @@
   margin: 0 auto;
 }
 
-/* --- 1. HERO SECTION --- */
-.company-hero {
+ .company-hero {
   padding: 80px 0;
   background-color: #ffffff;
 }
@@ -80,8 +76,7 @@
   transform: scale(1.05);
 }
 
-/* --- 2. OUR STORY & STATS --- */
-.our-story-section {
+ .our-story-section {
   padding: 80px 0;
   background-color: #ffffff;
 }
@@ -141,8 +136,7 @@
   margin: 0;
 }
 
-/* --- 3. LOGOS BAR --- */
-.logos-bar-section {
+ .logos-bar-section {
   padding: 40px 0;
   background-color: #f9f9ff;
   border-top: 1px solid #eef0f7;
@@ -244,8 +238,7 @@
   background: linear-gradient(to right, #ff944d 30%, #ffd1b3 30%, #ffd1b3 70%, #5d5bfa 70%);
 }
 
-/* --- 5. OUR VISION SECTION --- */
-.our-vision-section {
+ .our-vision-section {
   padding: 100px 0 60px 0;
   background-color: #ffffff;
 }
@@ -287,8 +280,7 @@
   transform: scale(1.02);
 }
 
-/* --- 6. MEET OUR TEAM SECTION --- */
-.meet-team-section {
+ .meet-team-section {
   padding: 80px 0 120px 0;
   background-color: #ffffff;
 }
@@ -384,8 +376,7 @@
   filter: blur(1px);
 }
 
-/* --- 7. 🆕 FOOTER NEWSLETTER & INPUT BLOCK --- */
-.footer-newsletter {
+ .footer-newsletter {
   background-color: #ffe9da;
   padding: 40px 60px;
   display: flex;
