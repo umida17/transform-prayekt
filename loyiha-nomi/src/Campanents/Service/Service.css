@@ -311,10 +311,7 @@
   border-bottom: 2px solid #5d5bfa;
 }
 
-/* ---------------------------------------------------
-   3. ALL SERVICES DETAILS (YANGI SHAXMAT DESIGN & HOVERS)
-   --------------------------------------------------- */
-.services-details-block {
+   .services-details-block {
   padding-bottom: 100px;
   background-color: #ffffff;
 }
@@ -327,8 +324,7 @@
   padding: 80px 0;
 }
 
-/* Shaxmat tartibi bo'yicha rasm va matnni teskari qilish */
-.detail-row.reverse {
+ .detail-row.reverse {
   flex-direction: row-reverse;
 }
 
@@ -359,16 +355,14 @@
   margin: 0;
 }
 
-/* ⚡ Rasm bloklari va silliq Zoom effekti (Hammasi uchun) */
-.detail-image-side {
+ .detail-image-side {
   flex: 0.9;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
 
-/* Figma dizayndagi Consulting bo'limi binafsharang borderi */
-.detail-image-side.purple-border {
+ .detail-image-side.purple-border {
   border: 8px solid #a6a5ff;
 }
 
@@ -381,8 +375,7 @@
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Istalgan rasm ustiga kelganda yaqinlashish animatsiyasi */
-.detail-image-side:hover img,
+ .detail-image-side:hover img,
 .detail-image-side:hover .detail-img {
   transform: scale(1.06);
 }
