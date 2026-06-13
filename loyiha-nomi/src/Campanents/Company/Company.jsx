@@ -21,8 +21,7 @@ const Company = () => {
   return (
     <div className="company-page">
       
-      {/* 1. HERO SECTION */}
-      <section className="company-hero">
+       <section className="company-hero">
         <div className="container">
           <div className="company-hero-top">
             <span className="section-tag-orange">COMPANY</span>
@@ -55,8 +54,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 2. OUR STORY & STATS SECTION */}
-      <section className="our-story-section">
+       <section className="our-story-section">
         <div className="container story-container">
           <div className="story-left-text">
             <span className="story-mini-tag">Our Story ⚡</span>
@@ -91,8 +89,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 3. LOGOS BAR SECTION */}
-      <section className="logos-bar-section">
+       <section className="logos-bar-section">
         <div className="container logos-flex">
           <div className="logo-item">🔹 logoipsum</div>
           <div className="logo-item">⬢ logoipsum</div>
@@ -102,7 +99,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 4. OUR EXPERTISE SECTION */}
+      
       <section className="expertise-section">
         <div className="container expertise-container">
           <div className="expertise-left">
@@ -142,8 +139,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 5. OUR VISION SECTION */}
-      <section className="our-vision-section">
+       <section className="our-vision-section">
         <div className="container">
           <div className="vision-top">
             <span className="vision-mini-tag">OUR VISION</span>
@@ -158,8 +154,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* 6. MEET OUR TEAM SECTION */}
-      <section className="meet-team-section">
+       <section className="meet-team-section">
         <div className="container">
           <div className="team-header">
             <span className="team-mini-tag">MEET OUR TEAM</span>
@@ -196,11 +191,9 @@ const Company = () => {
 
 
       <section className="meet-team-section">
-        {/* ... (eski jamoa kodlari shu yerda turibdi) ... */}
-      </section>
+       </section>
 
-      {/* 7. INPUT / NEWSLETTER SECTION (Faqat input bo'limi, footer yo'q) */}
-      <section className="company-newsletter-section">
+       <section className="company-newsletter-section">
         <div className="container newsletter-box">
           <div className="newsletter-left">
             <h2>Our newsletter updates <br /> with new designs</h2>
