@@ -1,7 +1,4 @@
-/* ===================================================
-   🎨 FINSWEET FOOTER STYLES (EXACT REPLICA)
-   =================================================== */
-.footer-section {
+   .footer-section {
   background-color: #ffffff;
   font-family: 'Inter', sans-serif;
   padding-top: 80px;
@@ -15,8 +12,7 @@
   gap: 50px;
 }
 
-/* --- CHAP TARAFI --- */
-.footer-brand-side {
+ .footer-brand-side {
   flex: 1;
   max-width: 400px;
 }

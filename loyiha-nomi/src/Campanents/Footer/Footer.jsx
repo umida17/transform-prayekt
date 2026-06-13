@@ -5,13 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer-section">
       
-      {/* YUQORI QISM (OQ FONDA) */}
-      <div className="container footer-top">
+       <div className="container footer-top">
         
-        {/* Chap qism: Kontaktlar va Sarlavha */}
-        <div className="footer-brand-side">
-          {/* Logo dekoratsiyasi */}
-          <div className="footer-logo-decor">
+         <div className="footer-brand-side">
+           <div className="footer-logo-decor">
             <span className="logo-orange"></span>
             <span className="logo-blue"></span>
           </div>
@@ -29,12 +26,10 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* O'ng qism: Linklar va Tugma */}
-        <div className="footer-links-side">
+         <div className="footer-links-side">
           <div className="footer-menu-grid">
             
-            {/* 1-ustun */}
-            <ul className="footer-menu-col no-title">
+             <ul className="footer-menu-col no-title">
               <li><a href="#home">Home</a></li>
               <li><a href="#service">Service</a></li>
               <li><a href="#company">Company</a></li>
@@ -42,8 +37,7 @@ const Footer = () => {
               <li><a href="#news">News</a></li>
             </ul>
 
-            {/* 2-ustun */}
-            <ul className="footer-menu-col">
+             <ul className="footer-menu-col">
               <li className="menu-title">Service</li>
               <li><a href="#tech">Technical support</a></li>
               <li><a href="#testing">Testing</a></li>
@@ -53,8 +47,7 @@ const Footer = () => {
               <li><a href="#it">Information Technology</a></li>
             </ul>
 
-            {/* 3-ustun */}
-            <ul className="footer-menu-col">
+             <ul className="footer-menu-col">
               <li className="menu-title">Resources</li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#testimonial">Testimonial</a></li>
@@ -65,8 +58,7 @@ const Footer = () => {
 
           </div>
 
-          {/* Contact Us tugmasi (kichik dekoratsiyasi bilan) */}
-          <div className="footer-contact-btn-wrapper">
+           <div className="footer-contact-btn-wrapper">
             <div className="btn-decor">
               <span className="btn-decor-orange"></span>
               <span className="btn-decor-blue"></span>
@@ -79,8 +71,7 @@ const Footer = () => {
 
       </div>
 
-      {/* PASTKI QISM (KREM FONDA) */}
-      <div className="footer-bottom">
+       <div className="footer-bottom">
         <div className="container footer-bottom-container">
           <div className="footer-copyright">
             <strong>{"{"}Finsweet</strong>
