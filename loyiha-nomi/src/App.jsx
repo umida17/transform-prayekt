@@ -20,19 +20,16 @@ const Layout = () => {
   );
 };
 
-// 🎯 2. Asosiy App komponenti
-function App() {
+ function App() {
   return (
     <Router>
       <Routes>
         
-        {/* Layout'ni asosiy ota-boshqaruvchi qilib joylashtirdik */}
-        <Route path="/" element={<Layout />}>
-          {/* Ichki sahifalar (Bular Layout ichidagi Outlet o'rniga kelib o'tiradi) */}
-          <Route index element={<Home />} />
+         <Route path="/" element={<Layout />}>
+           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="service" element={<Service />} />
-          <Route path="company" element={<Company />} /> {/* 👈 BU YERGA KOMPONENTNI QO'SHDIK */}
+          <Route path="company" element={<Company />} />  
         </Route>
 
       </Routes>
