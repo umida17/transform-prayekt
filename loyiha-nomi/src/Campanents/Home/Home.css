@@ -922,12 +922,11 @@
 }
 
 .blog-card:hover .blog-link {
-  gap: 12px; /* Hover bo'lganda o'qcha o'ngga suriladi */
+  gap: 12px;  
 }
 
 
-/* --- YANGI QISMLAR RESPONSIV VARIANTI --- */
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
   .process-grid { grid-template-columns: 1fr; }
   .testimonials-container { flex-direction: column; gap: 40px; }
   .blogs-grid { grid-template-columns: 1fr; }
@@ -937,10 +936,7 @@
 
 
 
-/* ===================================================
-   🎯 8. NEWSLETTER SECTION (RASMDAKIDAN REPLIKA)
-   =================================================== */
-.newsletter-section {
+ .newsletter-section {
   padding: 60px 0;
   background-color: #ffffff;
 }
@@ -957,7 +953,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: 5; /* Input bosilishi uchun burchak bezaklaridan ustun turishi shart */
+  z-index: 5;  
 }
 
 .newsletter-text-side {
@@ -999,15 +995,14 @@
   outline: none;
   box-sizing: border-box;
   position: relative;
-  z-index: 10; /* Mutloq bosiluvchan holatga keltirildi */
+  z-index: 10;  
 }
 
 .newsletter-input::placeholder {
   color: #ababab;
 }
 
-/* 📐 Chap tarafdagi kvadrat bezaklar */
-.newsletter-decor-left {
+ .newsletter-decor-left {
   position: absolute;
   top: 0;
   left: 0;
