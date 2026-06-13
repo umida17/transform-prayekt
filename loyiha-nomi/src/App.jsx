@@ -4,14 +4,13 @@ import Navbar from './Campanents/Navbar/Navbar';
 import Home from './Campanents/Home/Home'; 
 import Footer from './Campanents/Footer/Footer'; 
 import Service from './Campanents/Service/Service'; 
-import Company from './Campanents/Company/Company'; // 👈 MANA SHU IMPORT QOLIB KETGAN EDI!
+import Company from './Campanents/Company/Company';  
 
 // 🎯 1. Layout komponenti
 const Layout = () => {
   return (
     <div>
-      {/* Navbar doimiy tepada turadi */}
-      <Navbar />
+       <Navbar />
       
        <Outlet />
       
