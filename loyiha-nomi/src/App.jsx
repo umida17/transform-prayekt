@@ -13,11 +13,9 @@ const Layout = () => {
       {/* Navbar doimiy tepada turadi */}
       <Navbar />
       
-      {/* Outlet - sahifaga qarab o'rtada Home, Service yoki Company almashib chiqadigan joy */}
-      <Outlet />
+       <Outlet />
       
-      {/* Footer doimiy pastda turadi */}
-      <Footer />
+       <Footer />
     </div>
   );
 };
