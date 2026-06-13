@@ -667,9 +667,8 @@
 }
 
 
-/* --- 🎯 6. TESTIMONIALS SECTION STILLARI --- */
-.testimonials-section {
-  background-color: #F9F9FF; /* Juda mayin va och fon */
+ .testimonials-section {
+  background-color: #F9F9FF;  
   padding: 100px 0;
 }
 
@@ -683,8 +682,7 @@
   flex: 1;
 }
 
-/* Kichik moviy kvadrat marker */
-.blue-square-bullet {
+ .blue-square-bullet {
   width: 16px;
   height: 16px;
   background-color: var(--btn-blue);
@@ -711,8 +709,7 @@
   margin-bottom: 40px;
 }
 
-/* Mijozlar avatarlari guruhi */
-.customer-reviews-group {
+ .customer-reviews-group {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -728,7 +725,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffffff;
-  margin-left: -12px; /* Rasmlarni bir-birining ustiga o'tkazish */
+  margin-left: -12px;  
 }
 .customer-avatars img:first-child { margin-left: 0; }
 
@@ -743,8 +740,7 @@
   font-size: 0.9rem;
 }
 
-/* O'ng tarafdagi iqtibos (Quote) qutisi */
-.testimonials-right {
+ .testimonials-right {
   flex: 1.2;
   background-color: #ffffff;
   padding: 50px;
@@ -832,13 +828,12 @@
 }
 .slider-dots .dot.active {
   background-color: var(--text-dark);
-  width: 18px; /* Faol nuqta sal cho'zilgan bo'ladi */
+  width: 18px; 
   border-radius: 4px;
 }
 
 
-/* --- 🎯 7. LATEST BLOGS SECTION STILLARI --- */
-.blogs-section {
+ .blogs-section {
   background-color: #ECF8F9;
   padding: 100px 0;
 }
