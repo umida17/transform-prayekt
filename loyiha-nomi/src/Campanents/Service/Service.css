@@ -1,15 +1,11 @@
-/* ===================================================
-   🎨 FINSWEET SERVICE PAGE STYLES (COMPLETE EDITION)
-   =================================================== */
-.service-page {
+   .service-page {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1d2130;
   overflow-x: hidden;
 }
 
-/* Umumiy yorliqlar (Tags) */
-.section-tag {
+ .section-tag {
   color: #1d2130;
   font-size: 0.85rem;
   font-weight: 600;
