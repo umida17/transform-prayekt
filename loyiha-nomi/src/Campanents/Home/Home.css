@@ -483,8 +483,7 @@
   transform: translateX(5px);
 }
 
-/* Uchta Xizmat Kartalari paneli */
-.services-grid {
+ .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -497,8 +496,7 @@
   border-radius: 2px;
 }
 
-/* Karta ustiga sichqoncha kelganda chiroyli ko'tarilish */
-.service-card:hover {
+ .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(29, 30, 44, 0.08);
 }
@@ -533,13 +531,12 @@
 }
 
 .service-link:hover {
-  gap: 14px; /* O'qcha siljiydi */
+  gap: 14px;  
   color: var(--btn-blue);
 }
 
 
-/* --- YANGI RESPONSIV SOZLAMALAR --- */
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
   .expertise-container {
     flex-direction: column;
     gap: 40px;
@@ -554,8 +551,7 @@
   }
 }
 
-/* --- 🎯 5. OUR PROCESS SECTION STILLARI --- */
-.process-section {
+ .process-section {
   background-color: #fbfbfb;
   padding: 100px 0;
 }
@@ -582,8 +578,7 @@
   font-size: 1rem;
 }
 
-/* O'ng burchakdagi kichik kvadratli aksent */
-.process-top-accent {
+ .process-top-accent {
   display: flex;
   gap: 4px;
 }
@@ -648,8 +643,7 @@
   margin: 0 0 20px 0;
 }
 
-/* Kartalar ostidagi chiziqlar */
-.process-card-line {
+ .process-card-line {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -660,7 +654,7 @@
 .process-card-line.gray-line { background-color: #eef0f3; }
 .process-card-line.blue-line { background-color: var(--btn-blue); }
 
-/* Hover bo'lganda kulrang chiziqlar harakatlanishi */
+ 
 .process-card:hover .gray-line {
   background-color: var(--btn-blue);
   transition: background-color 0.3s ease;
