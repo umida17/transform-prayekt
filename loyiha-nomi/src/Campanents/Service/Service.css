@@ -205,8 +205,7 @@
   height: 12px;
 }
 
-/* ⚡ Kartalar Grid va Mikrouzaro ta'sirlar */
-.process-steps-grid {
+ .process-steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -225,8 +224,7 @@
   cursor: pointer;
 }
 
-/* Karta ustiga kelganda tepaga ko'tarilish va soya */
-.step-card:hover {
+ .step-card:hover {
   transform: translateY(-10px);
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(29, 33, 48, 0.08);
@@ -239,8 +237,7 @@
   margin-bottom: 25px;
 }
 
-/* Ikonka animatsiyasi */
-.step-icon {
+ .step-icon {
   font-size: 1.6rem;
   transition: transform 0.4s ease;
 }
@@ -279,8 +276,7 @@
   margin: 0;
 }
 
-/* Pastki chiziqlar animatsiyasi */
-.step-bottom-line {
+ .step-bottom-line {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -290,7 +286,7 @@
 }
 
 .step-card:hover .step-bottom-line {
-  height: 6px; /* Hover bo'lganda biroz qalinlashadi */
+  height: 6px;  
 }
 
 .orange-blue-line {
