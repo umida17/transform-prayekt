@@ -387,24 +387,20 @@
   transform: scale(1.06);
 }
 
-/* ---------------------------------------------------
-   4. NEWSLETTER SECTION & INPUTS
-   --------------------------------------------------- */
-.newsletter-section {
+   .newsletter-section {
   padding: 60px 0 100px 0;
   background-color: #ffffff;
 }
 
 .newsletter-box {
-  background-color: #6664f9; /* Finsweet binafsharang foni */
+  background-color: #6664f9; 
   padding: 80px 60px;
   position: relative;
   overflow: hidden;
   border-radius: 2px;
 }
 
-/* Chap geometrik naqshlar */
-.news-decor-left {
+ .news-decor-left {
   position: absolute;
   left: 0;
   top: 0;
@@ -423,8 +419,7 @@
   margin-left: 28px;
 }
 
-/* O'ng geometrik naqshlar */
-.news-decor-right {
+ .news-decor-right {
   position: absolute;
   right: 0;
   top: 0;
