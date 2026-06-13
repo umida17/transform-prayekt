@@ -65,13 +65,13 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  transition: all 0.3s ease; /* Yumshoq o'tish */
+  transition: all 0.3s ease; 
 }
 
 .btn-quote:hover {
   background-color: #2e35cc;
-  transform: translateY(-3px); /* 3px yuqoriga ko'tariladi */
-  box-shadow: 0 10px 20px rgba(68, 76, 247, 0.3); /* Soyasi chiqadi */
+  transform: translateY(-3px);  
+  box-shadow: 0 10px 20px rgba(68, 76, 247, 0.3);  
 }
 
 .btn-quote .arrow {
@@ -79,11 +79,10 @@
 }
 
 .btn-quote:hover .arrow {
-  transform: translateX(5px); /* O'qcha o'ngga suriladi */
+  transform: translateX(5px); 
 }
 
-/* 🎯 Rasm va dekoratsiyalar hover effekti */
-.hero-image-wrapper {
+ .hero-image-wrapper {
   position: relative;
   max-width: 40%;
   overflow: visible;
@@ -99,10 +98,11 @@
 }
 
 .hero-image-wrapper:hover .hero-main-img {
-  transform: scale(1.03); /* Rasm ustiga borganda sal kattalashadi */
+  transform: scale(1.03);  
 }
 
-/* Dekorativ chiziqchalar harakati */
+ 
+
 .accent-orange-top, .accent-blue-right, .accent-orange-left {
   transition: transform 0.4s ease;
 }
@@ -222,8 +222,7 @@
   line-height: 1.6;
 }
 
-/* 🎯 Galereya rasmlariga hover berish */
-.about-gallery {
+ .about-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -243,11 +242,11 @@
 }
 
 .gallery-card:hover img {
-  transform: scale(1.05) rotate(1deg); /* Bir oz burilib kattalashadi */
+  transform: scale(1.05) rotate(1deg);  
 }
 
 .decorative-card {
-  overflow: visible; /* Yon chiziqlar ko'rinib turishi uchun */
+  overflow: visible; 
   position: relative;
 }
 
@@ -269,8 +268,7 @@
   background-color: var(--btn-blue);
 }
 
-/* 🎯 Statistika bo'limi dinamikasi */
-.about-stats-footer {
+ .about-stats-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,7 +284,7 @@
 }
 
 .stat-item:hover {
-  transform: translateY(-5px); /* Har bir statistika ustiga borganda ozgina ko'tariladi */
+  transform: translateY(-5px);  
 }
 
 .stat-item h3 {
@@ -304,7 +302,7 @@
 }
 
 .stat-item:hover .stat-line {
-  width: 50px; /* Hover bo'lganda tagidagi chiziq kengayadi */
+  width: 50px;  
 }
 
 .stat-line.orange { background-color: var(--accent-orange); }
@@ -312,8 +310,7 @@
 .stat-line.yellow { background-color: #ffcc00; }
 .stat-line.purple { background-color: #8a2be2; }
 
-/* 🎯 Link hover effekti */
-.read-more-link {
+ .read-more-link {
   color: var(--btn-blue);
   text-decoration: none;
   font-weight: 600;
@@ -324,7 +321,7 @@
 }
 
 .read-more-link:hover {
-  gap: 15px; /* O'qcha uzoqlashadi */
+  gap: 15px;  
   color: #2e35cc;
 }
 
@@ -341,9 +338,8 @@
 }
 
 
-/* --- 🎯 EXPERTISE SECTION --- */
-.expertise-section {
-  background-color: #f9fafb; /* Rasmda orqa fon mayin och kulrang/havorang tusda */
+ .expertise-section {
+  background-color: #f9fafb; 
   padding: 100px 0;
 }
 
