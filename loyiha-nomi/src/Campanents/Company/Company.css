@@ -158,8 +158,7 @@
   opacity: 0.8;
 }
 
-/* --- 4. OUR EXPERTISE --- */
-.expertise-section {
+ .expertise-section {
   padding: 100px 0;
   background-color: #f4f6fc;
 }
@@ -429,8 +428,7 @@
   background-color: #5d5bfa;
 }
 
-/* FOOTER CONTENT LINKS */
-.company-footer-section {
+ .company-footer-section {
   padding-top: 60px;
   background-color: #ffffff;
 }
@@ -558,8 +556,7 @@
   transform: scale(1.2);
 }
 
-/* --- 📱 RESPONSIVE DESIGN --- */
-@media (max-width: 1200px) {
+ @media (max-width: 1200px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -614,8 +611,7 @@
 
 
 
-/* --- 7. INPUT / NEWSLETTER SECTION --- */
-.company-newsletter-section {
+ .company-newsletter-section {
   padding: 60px 0 100px 0;
   background-color: #ffffff;
 }
@@ -668,7 +664,7 @@
 }
 
 .newsletter-btn {
-  background-color: #1d2130; /* To'q rangli tugma */
+  background-color: #1d2130;  
   color: #ffffff;
   border: none;
   outline: none;
@@ -681,11 +677,10 @@
 }
 
 .newsletter-btn:hover {
-  background-color: #5d5bfa; /* Hover bo'lganda ko'k rangga o'tadi */
+  background-color: #5d5bfa;  
 }
 
-/* --- Input bo'limi uchun responsive moslashuv --- */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
   .newsletter-box {
     flex-direction: column;
     align-items: flex-start;
