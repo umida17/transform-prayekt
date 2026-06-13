@@ -1,6 +1,6 @@
 import React from 'react';
 import './Service.css';
-import Featur from '../../assets/Featur.png'; // Siz yuklagan rasm o'z joyida
+import Featur from '../../assets/Featur.png';  
 import dastur from '../../assets/dastur.png';
 import kanpaniya from '../../assets/kanpaniya.png';
 import jamoa from '../../assets/jamoa.png';
@@ -11,8 +11,7 @@ const Service = () => {
   return (
     <div className="service-page">
       
-      {/* 1. HERO SECTION (KREM FONDA) */}
-      <section className="service-hero">
+       <section className="service-hero">
         <div className="container service-hero-container">
           
           {/* Chap tomon kontent */}
@@ -47,8 +46,7 @@ const Service = () => {
         </div>
       </section>
 
-      {/* 2. OUR PROCESS SECTION */}
-      <section className="service-process">
+       <section className="service-process">
         <div className="container">
           
           <div className="process-header-row">
@@ -143,12 +141,10 @@ const Service = () => {
         </div>
       </section>
 
-      {/* 3. ALL SERVICES DETAILS (SHAXMAT TARTIBIDA) */}
-      <section className="services-details-block">
+       <section className="services-details-block">
         <div className="container">
           
-          {/* Service 1: Technical Support (Rasm o'ngda - Sizning Featur.png rasmingiz) */}
-          <div className="detail-row" id="tech">
+           <div className="detail-row" id="tech">
             <div className="detail-text-side">
               <span className="detail-mini-title">Technical Support</span>
               <h2 className="detail-main-title">Best in class tech support for your company. We become your tech backbone</h2>
@@ -159,8 +155,7 @@ const Service = () => {
             </div>
           </div>
 
-          {/* Service 2: Development (Rasm chapda) */}
-          <div className="detail-row reverse" id="dev">
+           <div className="detail-row reverse" id="dev">
             <div className="detail-text-side">
               <span className="detail-mini-title">Development</span>
               <h2 className="detail-main-title">Bring your ideas to reality with certified team of developers, working with latest technologies</h2>
@@ -171,8 +166,7 @@ const Service = () => {
             </div>
           </div>
 
-          {/* Service 3: AWS/Azure (Rasm o'ngda) */}
-          <div className="detail-row" id="aws">
+           <div className="detail-row" id="aws">
             <div className="detail-text-side">
               <span className="detail-mini-title">AWS/Azure</span>
               <h2 className="detail-main-title">We help you deploy, manage and secure your application on leading web services</h2>
@@ -183,8 +177,7 @@ const Service = () => {
             </div>
           </div>
 
-          {/* Service 4: Consulting (Rasm chapda - Maxsus binafsharang borderli) */}
-          <div className="detail-row reverse" id="consulting">
+           <div className="detail-row reverse" id="consulting">
             <div className="detail-text-side">
               <span className="detail-mini-title">Consulting</span>
               <h2 className="detail-main-title">Get advice from world class professionals</h2>
@@ -195,8 +188,7 @@ const Service = () => {
             </div>
           </div>
 
-          {/* Service 5: Information Technology (Rasm o'ngda) */}
-          <div className="detail-row" id="it">
+           <div className="detail-row" id="it">
             <div className="detail-text-side">
               <span className="detail-mini-title">Information Technology</span>
               <h2 className="detail-main-title">We want to get local identification in every corner of the world in this era of global citizenship.</h2>
@@ -210,8 +202,7 @@ const Service = () => {
         </div>
       </section>
 
-      {/* 4. NEWSLETTER BANNER SECTION */}
-      <section className="newsletter-section">
+       <section className="newsletter-section">
         <div className="container newsletter-box">
           
           {/* Chap burchak geometrik naqshlari */}
