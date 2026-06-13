@@ -22,7 +22,7 @@
   margin-top: 70px;
 }
 
-/* --- HERO SECTION --- */
+ 
 .hero-section {
   background-color: var(--dark-bg);
   color: #ffffff;
@@ -53,8 +53,7 @@
   margin-bottom: 35px;
 }
 
-/* 🎯 Tugma va uning hover effekti */
-.btn-quote {
+ .btn-quote {
   background-color: var(--btn-blue);
   color: #ffffff;
   border: none;
