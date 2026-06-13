@@ -1021,7 +1021,8 @@
 .decor-orange-2 { background-color: #ffd1b3; grid-column: 2; grid-row: 1; }
 .decor-blue-1 { background-color: #8583ff; grid-column: 1; grid-row: 2; }
 
-/* 📐 O'ng tarafdagi vertikal bezak chizig'i */
+ 
+
 .newsletter-decor-right {
   position: absolute;
   top: 0;
@@ -1037,8 +1038,7 @@
 .decor-bar-light { background-color: #ffd1b3; height: 110px; }
 .decor-bar-blue { background-color: #3b39d1; flex-grow: 1; }
 
-/* 📱 Responsive versiya */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
   .newsletter-box {
     padding: 50px 40px;
   }

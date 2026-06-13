@@ -6,8 +6,7 @@ import Footer from './Campanents/Footer/Footer';
 import Service from './Campanents/Service/Service'; 
 import Company from './Campanents/Company/Company';  
 
-// 🎯 1. Layout komponenti
-const Layout = () => {
+ const Layout = () => {
   return (
     <div>
        <Navbar />
