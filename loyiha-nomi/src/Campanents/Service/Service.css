@@ -19,10 +19,7 @@
   margin-bottom: 20px;
 }
 
-/* ---------------------------------------------------
-   1. HERO SECTION & HOVERS
-   --------------------------------------------------- */
-.service-hero {
+   .service-hero {
   background-color: #ffe9da;
   padding: 100px 0;
 }
@@ -52,8 +49,7 @@
   margin-bottom: 40px;
 }
 
-/* ⚡ Request Quote Tugmasi Animatsiyasi */
-.hero-btn-wrapper {
+ .hero-btn-wrapper {
   display: flex;
   align-items: center;
   position: relative;
@@ -86,8 +82,7 @@
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* Tugma bosilganda va sichqoncha kelganda */
-.hero-btn-wrapper:hover .hero-btn-decor {
+ .hero-btn-wrapper:hover .hero-btn-decor {
   transform: scale(1.5) rotate(90deg);
 }
 
