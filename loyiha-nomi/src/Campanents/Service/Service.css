@@ -105,11 +105,10 @@
 }
 
 .btn-request-quote:hover span {
-  transform: translateX(6px); /* Arrow o'ngga suriladi */
+  transform: translateX(6px);  
 }
 
-/* ⚡ O'ng tomon Menyu Hoverlari */
-.service-hero-right {
+ .service-hero-right {
   flex: 0.8;
 }
 
@@ -137,15 +136,13 @@
   transform-origin: left;
 }
 
-/* Aktiv bo'lmagan linklar ustiga kelganda */
-.service-list-menu li a:hover {
+ .service-list-menu li a:hover {
   opacity: 0.8;
   color: #5d5bfa;
   transform: translateX(8px);
 }
 
-/* Aktiv (Development) link effekti */
-.service-list-menu li.active a {
+ .service-list-menu li.active a {
   opacity: 1;
   color: #1d2130;
   display: flex;
@@ -165,10 +162,7 @@
   50% { transform: translateX(8px); }
 }
 
-/* ---------------------------------------------------
-   2. PROCESS SECTION & HOVERS (6 KARTA)
-   --------------------------------------------------- */
-.service-process {
+   .service-process {
   padding: 100px 0;
   background-color: #ffffff;
 }
