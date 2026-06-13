@@ -455,8 +455,7 @@
   height: 40px;
 }
 
-/* Kontent strukturasi */
-.newsletter-content {
+ .newsletter-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -487,8 +486,7 @@
   max-width: 450px;
 }
 
-/* ⚡ Input Focus Animatsiyasi */
-.news-input {
+ .news-input {
   width: 80%;
   background-color: #ffffff;
   border: none;
@@ -510,10 +508,8 @@
   opacity: 0.3;
 }
 
-/* ---------------------------------------------------
-   📱 RESPONSIVE DESIGN (MOBIL VERSILAYAR)
-   --------------------------------------------------- */
-@media (max-width: 992px) {
+
+    @media (max-width: 992px) {
   .service-hero-container,
   .service-detail-container,
   .detail-row,
